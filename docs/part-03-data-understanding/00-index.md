@@ -19,8 +19,8 @@ Before you can train a model, you need to understand what you have. This part bu
 | 5 | [EDA: Data Quality](05-eda-data-quality.md) | [EDA: Descriptive Statistics](04-eda-descriptive-stats.md) |
 | 6 | [EDA: Distributions](06-eda-distributions.md) | [EDA: Descriptive Statistics](04-eda-descriptive-stats.md) |
 | 7 | [EDA: Correlations](07-eda-correlations.md) | [EDA: Distributions](06-eda-distributions.md) |
-| 8 | [Data Understanding: Best Practices](08-eda-best-practices.md) | -- |
+| 8 | [Data Understanding: Best Practices](08-eda-best-practices.md) | [EDA: Correlations](07-eda-correlations.md) · [EDA: Data Quality](05-eda-data-quality.md) |
 
 ---
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

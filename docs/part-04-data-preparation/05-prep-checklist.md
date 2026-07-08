@@ -4,6 +4,8 @@
 
 # Data Preparation Checklist
 
+**Requires**: [Feature Engineering](01-feature-engineering.md) · [Data Splits](04-data-splits.md) · [Scaling and Imputation](03-scaling-imputation.md)
+
 **Motivation**: The previous nuggets covered specific preparation steps: structural cleaning, encoding, imputation, and scaling. The data preparation phase of [🖝 CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md) sits between data understanding and modeling, but when you face a real dataset, the order in which you apply those steps matters. Which operations are safe to run on the full dataset, and which must wait until after the data split?
 
 > This checklist walks you through five preparation phases in the correct sequence: protecting your setup, structural cleaning, feature engineering, splitting the data, and statistic-estimating transformations. Steps in the last phase estimate statistics from data and must be fitted on training data only. The following companion nugget covers cross-cutting principles that apply at every phase: [🖝 Data Preparation Best Practices](../part-04-data-preparation/06-prep-principles.md).
@@ -97,4 +99,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Splits](04-data-splits.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Preparation Best Practices -->](06-prep-principles.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

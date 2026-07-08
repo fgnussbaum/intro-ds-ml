@@ -15,7 +15,7 @@
 | 1 | [Supervised Learning](01-supervised-learning.md) | -- |
 | 2 | [Linear Regression](02-linear-regression.md) | [Data Splits](../part-04-data-preparation/04-data-splits.md) |
 | 3 | [Gradient Descent](03-gradient-descent.md) | [Linear Regression](02-linear-regression.md) |
-| 4 | [Underfitting and Overfitting](04-under-overfitting.md) | -- |
+| 4 | [Underfitting and Overfitting](04-under-overfitting.md) | [Linear Regression](02-linear-regression.md) · [Data Splits](../part-04-data-preparation/04-data-splits.md) · [Feature Engineering](../part-04-data-preparation/01-feature-engineering.md) |
 | 5 | [Regularized Regression](05-regularized-regression.md) | [Linear Regression](02-linear-regression.md) · [Gradient Descent](03-gradient-descent.md) |
 | 6 | [Hyperparameter Optimization](06-hyperparameters.md) | [Regularized Regression](05-regularized-regression.md) · [Underfitting and Overfitting](04-under-overfitting.md) |
 | 7 | [Classification Tasks](07-classification-tasks.md) | [Supervised Learning](01-supervised-learning.md) |
@@ -26,4 +26,4 @@
 
 ---
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

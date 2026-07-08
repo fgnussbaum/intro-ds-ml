@@ -4,7 +4,7 @@
 
 # Explainability
 
-**Requires**: [Start Simple](02-start-simple.md) · [Random Forests](../part-05-supervised-learning/10-random-forests.md)
+**Requires**: [Start Simple](02-start-simple.md) · [Random Forests](../part-05-supervised-learning/10-random-forests.md) · [Linear Regression](../part-05-supervised-learning/02-linear-regression.md)
 
 **Motivation**: Your model predicts something, but can a human understand why? Models that are **explainable/interpretable** help both the people who act on their decisions and those affected by them, like a patient receiving an AI-assisted diagnosis. As a rule of thumb, more complex models are less interpretable: this is yet another reason to [🖝 Start Simple](../part-06-reflection/02-start-simple.md), since something like a [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md), with its thousands of branches, already resists explanation almost as much as a black-box neural network. Beyond debugging and calibrating trust, explainability is increasingly becoming a legal requirement.
 
@@ -111,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Choosing and Aligning Metrics](04-aligning-metrics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VII: Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

@@ -13,7 +13,7 @@ Shallow models (linear models, trees, ensembles) cover a wide range of structure
 | # | Nugget | Prerequisites |
 |---|--------|---------------|
 | 1 | [When Shallow Models Fail](01-when-shallow-fails.md) | [Start Simple](../part-06-reflection/02-start-simple.md) |
-| 2 | [Building Blocks of Deep Networks](02-deep-networks.md) | [When Shallow Models Fail](01-when-shallow-fails.md) |
+| 2 | [Building Blocks of Deep Networks](02-deep-networks.md) | [When Shallow Models Fail](01-when-shallow-fails.md) · [Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md) |
 | 3 | [Convolutional Neural Networks (CNNs)](03-cnns.md) | [Building Blocks of Deep Networks](02-deep-networks.md) · [Classification Tasks](../part-05-supervised-learning/07-classification-tasks.md) |
 | 4 | [What Deep Networks Learn: Representations](04-dl-representations.md) | [Building Blocks of Deep Networks](02-deep-networks.md) · [Convolutional Neural Networks (CNNs)](03-cnns.md) |
 | 5 | [Transfer Learning](05-transfer-learning.md) | [What Deep Networks Learn: Representations](04-dl-representations.md) · [Convolutional Neural Networks (CNNs)](03-cnns.md) |
@@ -23,4 +23,4 @@ Shallow models (linear models, trees, ensembles) cover a wide range of structure
 
 ---
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

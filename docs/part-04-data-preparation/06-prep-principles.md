@@ -4,6 +4,8 @@
 
 # Data Preparation Best Practices
 
+**Requires**: [Data Splits](04-data-splits.md)
+
 **Motivation**: With [🖝 Data Preparation Checklist](../part-04-data-preparation/05-prep-checklist.md) you got a guideline what to do and in what order. But just trying to encode data-science knowledge as "ordered steps" is not enough. It is also important to understand principles and avoid mistakes that can silently corrupt a project. What are recurring pitfalls that undermine data preparation, and how do you guard against them?
 
 > This nugget covers cross-cutting principles that apply at every phase of data preparation: keeping raw data read-only, preventing data leakage, fixing random seeds, using pipelines to enforce preprocessing correctness, and documenting structural decisions. Violating any one of them can silently invalidate any project outcomes.
@@ -77,4 +79,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Preparation Checklist](05-prep-checklist.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part V: Supervised Learning -->](../part-05-supervised-learning/00-index.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

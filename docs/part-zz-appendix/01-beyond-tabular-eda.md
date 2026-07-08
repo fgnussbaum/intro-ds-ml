@@ -4,6 +4,8 @@
 
 # Beyond Tabular Data
 
+**Requires**: [Datasets](../part-03-data-understanding/03-datasets.md)
+
 **Motivation**: Everything you have learned so far assumes the data fits in a table: one row per record, one column per attribute, no meaningful ordering among rows. But a photograph is not a row, a heartbeat trace is not a column, and a text document has no fixed schema. This nugget asks: When does the tabular assumption break down, and what changes when it does?
 
 > You will learn to recognize the structural properties of images, video, text, time series, and spatial data, understand why each format requires tools beyond standard tabular workflows. For each type you'll see what the EDA mindset looks like when applied to the respective type of data.
@@ -123,4 +125,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Preparing Non-Tabular Data -->](02-beyond-tabular-prep.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

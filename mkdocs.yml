@@ -76,6 +76,7 @@ nav:
     - Overview: part-08-deep-learning/00-index.md
     - When Shallow Models Fail: part-08-deep-learning/01-when-shallow-fails.md
     - Building Blocks of Deep Networks: part-08-deep-learning/02-deep-networks.md
+    - Convolutional Neural Networks (CNNs): part-08-deep-learning/03-cnns.md
   - Appendix:
     - Overview: part-zz-appendix/00-index.md
     - Beyond Tabular Data: part-zz-appendix/01-beyond-tabular-eda.md
@@ -83,3 +84,4 @@ nav:
     - "Regression: Interpretation and Assumptions": part-zz-appendix/03-regression-depth.md
     - Statistical Significance: part-zz-appendix/04-statistical-significance.md
     - Support Vector Machines: part-zz-appendix/05-support-vector-machines.md
+  - References: references.md

@@ -4,6 +4,8 @@
 
 # Data Understanding: Best Practices
 
+**Requires**: [EDA: Correlations](07-eda-correlations.md) · [EDA: Data Quality](05-eda-data-quality.md)
+
 **Motivation**: You have now built a quite complete EDA toolkit: loading data, checking structure, computing statistics, visualizing distributions, assessing quality, and examining correlations. Let's wrap everything up.
 
 > Here, you'll find an EDA checklist consolidating the best practices from this part, a visualization reference table mapping analytical questions to the right plot type, and a set of pitfalls that cause charts to mislead. This gives you a practical workflow guide and steps to train your "critical eye" for data work.
@@ -81,4 +83,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Correlations](07-eda-correlations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

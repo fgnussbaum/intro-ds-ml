@@ -16,8 +16,8 @@ After your first end-to-end pass through supervised learning, this part steps ba
 | 2 | [Start Simple](02-start-simple.md) | [Generalization](01-generalization.md) |
 | 3 | [Baselines and the Good-Enough Bar](03-baselines.md) | [Start Simple](02-start-simple.md) |
 | 4 | [Choosing and Aligning Metrics](04-aligning-metrics.md) | [Baselines and the Good-Enough Bar](03-baselines.md) · [Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md) |
-| 5 | [Explainability](05-explainability.md) | [Start Simple](02-start-simple.md) · [Random Forests](../part-05-supervised-learning/10-random-forests.md) |
+| 5 | [Explainability](05-explainability.md) | [Start Simple](02-start-simple.md) · [Random Forests](../part-05-supervised-learning/10-random-forests.md) · [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
 
 ---
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

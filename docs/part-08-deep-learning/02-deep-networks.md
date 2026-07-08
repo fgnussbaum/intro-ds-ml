@@ -4,7 +4,7 @@
 
 # Building Blocks of Deep Networks
 
-**Requires**: [When Shallow Models Fail](01-when-shallow-fails.md)
+**Requires**: [When Shallow Models Fail](01-when-shallow-fails.md) · [Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md)
 
 **Motivation**: In [🖝 When Shallow Models Fail](../part-08-deep-learning/01-when-shallow-fails.md), you saw that learning features is usually necessary for raw images, audio, and sequences. "Learning features automatically" needs appropriate models. What is the smallest building block of a neural network, how do they gain the ability to learn complex features, and how do models update based on prediction errors?
 
@@ -20,6 +20,10 @@
 - [Summary](#summary)
 
 ## Single Neuron: Weighted Sum and Activation
+
+Here's a visual layout of a **neuron** that follows the familiar structure from [🖝 Logistic Regression](../part-05-supervised-learning/11-logistic-regression.md):
+
+<p><center><img src="../media/plots/single_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" width="500px"/></center></p>
 
 A **neuron** takes a vector of inputs $\mathbf{x} = (x_1, x_2, \ldots, x_n)$, multiplies each input by a **weight** $w_i$, sums the results, adds a **bias** $b$, and passes the sum through a nonlinear function:
 
@@ -38,7 +42,7 @@ Two activation functions dominate modern practice:
 
 <p><center><img src="../media/plots/activation_functions.png" alt="side-by-side plots of sigmoid, ReLU, tanh activation functions" width="780px"/></center></p>
 
-With an activation function, the nonlinearity is already there. However, the power of neural networks comes from combining many neurons in layers.
+Activation functions provide nonlinearity. However, the power of neural networks comes from combining many neurons in layers.
 
 ---
 
@@ -76,7 +80,7 @@ Training adjusts all weights in the network to minimize the loss. This requires 
 
 <!-- Figure: the same fully connected network with arrows showing the forward pass (data flowing right) and the backward pass (gradient signal flowing left). Caption: "Forward pass computes predictions; backward pass propagates error gradients to every weight." -->
 
-> **Note:** Backpropagation is not a learning algorithm on its own. It computes gradients. [🖝 Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md)-like algorithms do the updating. The two work together: backprop computes the direction, the optimizer takes the step.
+> **Note:** Backpropagation is not a learning algorithm on its own, it just computes gradients. [🖝 Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md)-like algorithms clarify how actual updates to parameters are carried out. The two work together: "backprop" computes the direction, the optimizer takes the step.
 
 With gradients in hand, **gradient descent** updates each weight by a small step opposite to the gradient. This is the same algorithm from [🖝 Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md), now applied to all parameters simultaneously.
 
@@ -105,4 +109,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- When Shallow Models Fail](01-when-shallow-fails.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Convolutional Neural Networks (CNNs) -->](03-cnns.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

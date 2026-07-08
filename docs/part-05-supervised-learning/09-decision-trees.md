@@ -19,7 +19,6 @@
 - [Interpreting Trees](#interpreting-trees)
 - [Summary](#summary)
 - [Bonus: Building the Tree](#bonus-building-the-tree)
-- [References](#references)
 
 ## Decision Trees
 
@@ -105,7 +104,7 @@ This shows that trees are simple models with good [🖝 Explainability](../part-
 
 ## Bonus: Building the Tree
 
-The standard recursive procedure is **Hunt's Algorithm** (Tan et al., 2020):
+The standard recursive procedure is **Hunt's Algorithm** [(Tan et al., 2020)](../references.md#tan2020):
 
 1. If all training records at the current node belong to the same class, make that node a leaf.
 2. Otherwise, choose the feature and threshold that best separates the records and split. Distribute records to the child nodes accordingly.
@@ -154,12 +153,6 @@ $$G(v) = 1 - \sum_c p_v(c)^2$$
 Both entropy and gini select nearly identical splits in practice, so you can just use the default (Gini) from `DecisionTreeClassifier`.
 In practice, Gini is slightly faster (no logarithm), entropy produces a sharper penalty on mixed nodes.
 
----
-
-## References
-
-Tan, P.-N., Steinbach, M., Karpatne, A., & Kumar, V. (2020). *Introduction to Data Mining* (2nd ed.). Pearson.
-
 As always: Happy learning, happy life! 🫶
 
 
@@ -167,4 +160,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Evaluation](08-classification-evaluation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Random Forests -->](10-random-forests.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

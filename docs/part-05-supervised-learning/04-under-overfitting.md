@@ -4,6 +4,8 @@
 
 # Underfitting and Overfitting
 
+**Requires**: [Linear Regression](02-linear-regression.md) · [Data Splits](../part-04-data-preparation/04-data-splits.md) · [Feature Engineering](../part-04-data-preparation/01-feature-engineering.md)
+
 **Motivation**: Every supervised model is trained to minimize error on training data. But the goal is to predict well on data the model has never seen. These two objectives can work against each other. When they do, the model fails in practice even when the training numbers look good.
 
 > You will use polynomial regression as a visually transparent lens to study this problem. You will observe what underfitting and overfitting look like concretely Then, we'll consider bias-variance trade-off, the underlying tension that governs every supervised learning model.
@@ -103,4 +105,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Gradient Descent](03-gradient-descent.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Regularized Regression -->](05-regularized-regression.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

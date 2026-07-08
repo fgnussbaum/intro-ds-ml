@@ -4,7 +4,7 @@
 
 # Support Vector Machines
 
-**Requires**: [Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md)
+**Requires**: [Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md) · [Classification Tasks](../part-05-supervised-learning/07-classification-tasks.md)
 
 **Motivation**: A decision tree and a logistic regression both classify by drawing a boundary between classes — but they make different choices about where to place it. Support Vector Machines ask a different question: of all the boundaries that separate the classes correctly, which one is farthest from both? That geometric intuition leads to a classifier with strong theoretical backing and surprising performance on high-dimensional data.
 
@@ -82,4 +82,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Statistical Significance](04-statistical-significance.md) | [Part Index](00-index.md) | [Main Index](../index.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

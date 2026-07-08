@@ -8,7 +8,7 @@
 
 **Motivation**: You are monitoring a production machine and want to flag readings that look unusual before they become failures. The difficulty is that you have very few labeled examples of faults: most of the time the machine runs normally, and a fault is precisely what has not happened yet. Anomaly detection is the branch of unsupervised learning built for this situation. Its goal is to find observations that do not fit the pattern of the rest, without a labeled training set to learn from.
 
-> In this nugget, you'll learn why framing what counts as an anomaly matters for anomaly detection, and you'll get to know the simplest statistical baselines that can be used for anomaly detection when you want interpretable, fast results on single features.
+> In this nugget, you'll learn why for anomaly detection, framing what counts as an anomaly is the first step. Then, you'll get to know the simplest statistical baselines. You can use for them for anomaly detection when you want interpretable, fast results on single features.
 
 > **Interactive demo note:** You can explore everything said here using the **anomaly detection** demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository.
 
@@ -25,7 +25,7 @@
 There is no universal definition of "abnormal". What counts as anomalous depends entirely on the domain.
 
 - A temperature reading of 80°C might be normal for one machine and catastrophic for another.
-- A transaction of $€50\,000$ might be routine for a corporate account and suspicious for a student account.
+- A transaction of $50\,000$€ might be routine for a corporate account and suspicious for a student account.
 
 > **Important:** The definition of normality must be derived from the data's domain context.
 
@@ -111,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- k-Means Clustering](02-k-means-clustering.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Isolation Forests -->](04-isolation-forests.md)
 
-Script v1.5 (2026-06-24) · FGN
+Script v1.6 (2026-07-08) · FGN

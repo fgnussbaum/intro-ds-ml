@@ -14,7 +14,7 @@
         <link rel="prev" href="01-when-shallow-fails.html">
       
       
-        <link rel="next" href="../part-zz-appendix/00-index.html">
+        <link rel="next" href="03-cnns.html">
       
       
         
@@ -2296,6 +2296,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-cnns.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convolutional Neural Networks (CNNs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2525,6 +2553,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2641,11 +2696,11 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="01-when-shallow-fails.html">&lt;-- When Shallow Models Fail</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-cnns.md">Convolutional Neural Networks (CNNs) --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="01-when-shallow-fails.html">&lt;-- When Shallow Models Fail</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-cnns.html">Convolutional Neural Networks (CNNs) --&gt;</a></p>
 </blockquote>
 <hr />
 <h1 id="building-blocks-of-deep-networks">Building Blocks of Deep Networks</h1>
-<p><strong>Requires</strong>: <a href="01-when-shallow-fails.html">When Shallow Models Fail</a></p>
+<p><strong>Requires</strong>: <a href="01-when-shallow-fails.html">When Shallow Models Fail</a> · <a href="../part-05-supervised-learning/03-gradient-descent.html">Gradient Descent</a></p>
 <p><strong>Motivation</strong>: In <a href="01-when-shallow-fails.html">🖝 When Shallow Models Fail</a>, you saw that learning features is usually necessary for raw images, audio, and sequences. "Learning features automatically" needs appropriate models. What is the smallest building block of a neural network, how do they gain the ability to learn complex features, and how do models update based on prediction errors?</p>
 <blockquote>
 <p>You'll see how a single neuron computes a prediction, how stacking neurons into layers builds increasingly abstract representations, and how backpropagation and gradient descent are used for adjusting weights (training). You will also meet some common techniques applied during training: dropout and early stopping. Both control overfitting in deep networks.</p>
@@ -2659,6 +2714,9 @@
 <li><a href="#summary">Summary</a></li>
 </ul>
 <h2 id="single-neuron-weighted-sum-and-activation">Single Neuron: Weighted Sum and Activation</h2>
+<p>Here's a visual layout of a <strong>neuron</strong> that follows the familiar structure from <a href="../part-05-supervised-learning/11-logistic-regression.html">🖝 Logistic Regression</a>:</p>
+<p><center><img src="../media/plots/single_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" width="500px"/></center></p>
+
 <p>A <strong>neuron</strong> takes a vector of inputs <span class="arithmatex">\(\mathbf{x} = (x_1, x_2, \ldots, x_n)\)</span>, multiplies each input by a <strong>weight</strong> <span class="arithmatex">\(w_i\)</span>, sums the results, adds a <strong>bias</strong> <span class="arithmatex">\(b\)</span>, and passes the sum through a nonlinear function:</p>
 <div class="arithmatex">\[\begin{align*}
 z &amp;= w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b = \mathbf{w}^\top \mathbf{x} + b \\
@@ -2673,7 +2731,7 @@ a &amp;= f(z)
 </ul>
 <p><center><img src="../media/plots/activation_functions.png" alt="side-by-side plots of sigmoid, ReLU, tanh activation functions" width="780px"/></center></p>
 
-<p>With an activation function, the nonlinearity is already there. However, the power of neural networks comes from combining many neurons in layers.</p>
+<p>Activation functions provide nonlinearity. However, the power of neural networks comes from combining many neurons in layers.</p>
 <hr />
 <h2 id="layers-and-network-architecture">Layers and Network Architecture</h2>
 <p>When neurons are stacked side by side they form a <strong>layer</strong>. The output of one layer becomes the input to the next. A network with one or more intermediate layers between the inputs and the output is called a <strong>deep network</strong>, where "deep" refers to the number of layers.</p>
@@ -2700,7 +2758,7 @@ a &amp;= f(z)
 <!-- Figure: the same fully connected network with arrows showing the forward pass (data flowing right) and the backward pass (gradient signal flowing left). Caption: "Forward pass computes predictions; backward pass propagates error gradients to every weight." -->
 
 <blockquote>
-<p><strong>Note:</strong> Backpropagation is not a learning algorithm on its own. It computes gradients. <a href="../part-05-supervised-learning/03-gradient-descent.html">🖝 Gradient Descent</a>-like algorithms do the updating. The two work together: backprop computes the direction, the optimizer takes the step.</p>
+<p><strong>Note:</strong> Backpropagation is not a learning algorithm on its own, it just computes gradients. <a href="../part-05-supervised-learning/03-gradient-descent.html">🖝 Gradient Descent</a>-like algorithms clarify how actual updates to parameters are carried out. The two work together: "backprop" computes the direction, the optimizer takes the step.</p>
 </blockquote>
 <p>With gradients in hand, <strong>gradient descent</strong> updates each weight by a small step opposite to the gradient. This is the same algorithm from <a href="../part-05-supervised-learning/03-gradient-descent.html">🖝 Gradient Descent</a>, now applied to all parameters simultaneously.</p>
 <p>The practical default optimizer for deep networks is <strong>Adam</strong> (Adaptive Moment Estimation). Adam extends gradient descent with per-parameter adaptive learning rates and momentum, which makes it converge faster on most tasks and requires less manual tuning of the learning rate.</p>
@@ -2723,9 +2781,9 @@ a &amp;= f(z)
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="01-when-shallow-fails.html">&lt;-- When Shallow Models Fail</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-cnns.md">Convolutional Neural Networks (CNNs) --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="01-when-shallow-fails.html">&lt;-- When Shallow Models Fail</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-cnns.html">Convolutional Neural Networks (CNNs) --&gt;</a></p>
 </blockquote>
-<p>Script v1.5 (2026-06-24) · FGN</p>
+<p>Script v1.6 (2026-07-08) · FGN</p>
 
 
 

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-06-reflection/04-aligning-metrics.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-08-deep-learning/03-cnns.html">
       
       
-        <link rel="prev" href="03-baselines.html">
+        <link rel="prev" href="02-deep-networks.html">
       
       
-        <link rel="next" href="05-explainability.html">
+        <link rel="next" href="../part-zz-appendix/00-index.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Choosing and Aligning Metrics - Intro to Data Science & ML</title>
+        <title>Convolutional Neural Networks (CNNs) - Intro to Data Science & ML</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#choosing-and-aligning-metrics" class="md-skip">
+        <a href="#convolutional-neural-networks-cnns" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Choosing and Aligning Metrics
+              Convolutional Neural Networks (CNNs)
             
           </span>
         </div>
@@ -1632,20 +1632,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1666,7 +1664,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1684,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-index.html" class="md-nav__link">
+      <a href="../part-06-reflection/00-index.html" class="md-nav__link">
         
   
   
@@ -1712,7 +1710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-generalization.html" class="md-nav__link">
+      <a href="../part-06-reflection/01-generalization.html" class="md-nav__link">
         
   
   
@@ -1740,7 +1738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-start-simple.html" class="md-nav__link">
+      <a href="../part-06-reflection/02-start-simple.html" class="md-nav__link">
         
   
   
@@ -1768,7 +1766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-baselines.html" class="md-nav__link">
+      <a href="../part-06-reflection/03-baselines.html" class="md-nav__link">
         
   
   
@@ -1793,37 +1791,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choosing and Aligning Metrics
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="04-aligning-metrics.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/04-aligning-metrics.html" class="md-nav__link">
         
   
   
@@ -1839,120 +1810,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Table of Contents
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metrics-as-optimization-targets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metrics as Optimization Targets
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-standard-metrics-to-real-costs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        From Standard Metrics to Real Costs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-metric-business-goal-and-ethics-diverge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        When Metric, Business Goal, and Ethics Diverge
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="When Metric, Business Goal, and Ethics Diverge">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#metric-and-business-goal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metric and business goal
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metric-and-task" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metric and task
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metric-and-ethics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metric and ethics
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1965,7 +1822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-explainability.html" class="md-nav__link">
+      <a href="../part-06-reflection/05-explainability.html" class="md-nav__link">
         
   
   
@@ -2191,18 +2048,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -2223,7 +2082,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2241,7 +2100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-08-deep-learning/00-index.html" class="md-nav__link">
+      <a href="00-index.html" class="md-nav__link">
         
   
   
@@ -2269,7 +2128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-08-deep-learning/01-when-shallow-fails.html" class="md-nav__link">
+      <a href="01-when-shallow-fails.html" class="md-nav__link">
         
   
   
@@ -2297,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-08-deep-learning/02-deep-networks.html" class="md-nav__link">
+      <a href="02-deep-networks.html" class="md-nav__link">
         
   
   
@@ -2322,10 +2181,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/03-cnns.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convolutional Neural Networks (CNNs)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="03-cnns.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2341,6 +2227,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convolution-as-local-pattern-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convolution as Local Pattern Detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Convolution as Local Pattern Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-cnns-parameter-efficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What makes CNNs parameter-efficient
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-classification-and-softmax-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Classification and Softmax-Function
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cnn-based-image-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CNN-Based Image Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2640,66 +2618,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#metrics-as-optimization-targets" class="md-nav__link">
+  <a href="#convolution-as-local-pattern-detection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Metrics as Optimization Targets
+        Convolution as Local Pattern Detection
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-standard-metrics-to-real-costs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        From Standard Metrics to Real Costs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-metric-business-goal-and-ethics-diverge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        When Metric, Business Goal, and Ethics Diverge
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="When Metric, Business Goal, and Ethics Diverge">
+    <nav class="md-nav" aria-label="Convolution as Local Pattern Detection">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#metric-and-business-goal" class="md-nav__link">
+  <a href="#what-makes-cnns-parameter-efficient" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Metric and business goal
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metric-and-task" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metric and task
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metric-and-ethics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metric and ethics
+        What makes CNNs parameter-efficient
       
     </span>
   </a>
@@ -2708,6 +2642,28 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-classification-and-softmax-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Classification and Softmax-Function
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cnn-based-image-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CNN-Based Image Tasks
+      
+    </span>
+  </a>
   
 </li>
       
@@ -2740,189 +2696,107 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="03-baselines.html">&lt;-- Baselines and the Good-Enough Bar</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-explainability.html">Explainability --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="02-deep-networks.html">&lt;-- Building Blocks of Deep Networks</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-dl-representations.md">What Deep Networks Learn: Representations --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="choosing-and-aligning-metrics">Choosing and Aligning Metrics</h1>
-<p><strong>Requires</strong>: <a href="03-baselines.html">Baselines and the Good-Enough Bar</a> · <a href="../part-05-supervised-learning/08-classification-evaluation.html">Classification Evaluation</a></p>
-<p><strong>Motivation</strong>: The <a href="03-baselines.html">🖝 Baselines and the Good-Enough Bar</a> nugget just showed that domain requirements must be translated into a metric before training begins. But which metric, and what makes it the right choice? Since metrics are optimization targets, they are no "neutral" measurements: A model optimized for accuracy on an imbalanced dataset learns to predict the majority class for nearly everything, and a model optimized for average call-handling speed learns to hang up on difficult callers. In both cases, the metric is looking good <strong>but the goal is not achieved</strong>.</p>
+<h1 id="convolutional-neural-networks-cnns">Convolutional Neural Networks (CNNs)</h1>
+<p><strong>Requires</strong>: <a href="02-deep-networks.html">Building Blocks of Deep Networks</a> · <a href="../part-05-supervised-learning/07-classification-tasks.html">Classification Tasks</a></p>
+<p><strong>Motivation</strong>: A fully connected layer treats every pixel as an independent input feature. For a 256×256 image, that is 65,536 inputs: the first hidden layer has thousands of neurons, meaning tens of millions of weights from the first layer alone. More critically, a fully connected layer has no built-in notion that pixel (10,10) and pixel (11,10) are neighbors. Convolutional neural networks solve both problems at once: They drastically reduce the number of parameters and they explicitly exploit the spatial structure of the image.</p>
+<p>TBD: rework</p>
 <blockquote>
-<p>Here, you'll learn why metric choice is one of the highest-leverage decisions in any ML project, how to frame error costs in your specific domain, and how to recognize when a technically correct metric conflicts with the business goal or produces ethically problematic outcomes.</p>
-<p><strong>Interactive demo note:</strong> In the <strong>Classification game</strong> demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository, you can test your reading skills and calibration of metrics, as well as practice several machine learning principles, including <em>start simple</em> and <em>one change at a time</em>.</p>
+<p>In this nugget, you'll see how convolution filters help detecting local patterns by sliding over the image, how stacking convolutional layers builds hierarchical image representations, and how CNNs are the starting point for a family of specialized vision tasks far beyond basic classification.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#metrics-as-optimization-targets">Metrics as Optimization Targets</a></li>
-<li><a href="#from-standard-metrics-to-real-costs">From Standard Metrics to Real Costs</a></li>
-<li><a href="#when-metric-business-goal-and-ethics-diverge">When Metric, Business Goal, and Ethics Diverge</a></li>
+<li><a href="#convolution-as-local-pattern-detection">Convolution as Local Pattern Detection</a></li>
+<li><a href="#image-classification-and-softmax-function">Image Classification and Softmax-Function</a></li>
+<li><a href="#cnn-based-image-tasks">CNN-Based Image Tasks</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="metrics-as-optimization-targets">Metrics as Optimization Targets</h2>
-<p>Most training algorithms optimize the model parameters to maximize (or minimize) a loss function. The loss function can be seen as a specific metric. As a result, the model gets better at exactly what it is measured on. If the metric is a good proxy for what you actually want, the model improves along the right dimension. If the metric is a poor proxy, you get a model that performs on the metric while failing the goal.</p>
-<p>The economist Charles Goodhart observed this dynamic in a broader social context:</p>
+<h2 id="convolution-as-local-pattern-detection">Convolution as Local Pattern Detection</h2>
+<p>A <strong>convolutional layer</strong> applies a small filter (also called a <strong>kernel</strong>) to a local region of the input image, slides it across the entire image, and produces a <strong>feature map</strong>. The filter is a small grid of weights that is learned during training, for example a <span class="arithmatex">\(3 \times 3\)</span> matrix, show by the orange box in the figure:</p>
+<p><center><img src="../media/plots/conv_filter_diagram.png" alt="a 5×5 image with a 3×3 filter sliding over it. Arrows show the filter position and the corresponding output value in the feature map" width="500px"/></center></p>
+
+<p>The filter slides across the image in steps (<strong>strides</strong>). At each position, it computes a weighted sum of the pixel values it currently covers. The result at each position is one value in the output feature map. Each filter learns to detect one type of local pattern.</p>
 <blockquote>
-<p><strong><a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">🔗 Goodhard's Law</a>:</strong> When a measure becomes a target, it ceases to be a good measure.</p>
+<p><strong>Background (filters in classical image processing):</strong> Classical image processing also uses the filter idea with hand-crafted weights instead of learned ones. Take the filter shown above: its column values from left to right are +1, 0, -1. At a vertical edge, where brightness changes sharply, the difference is large, so the filter "fires": it <strong>picks out edges running vertically</strong>. In contrast, in flat region, where neighboring pixels have similar brightness, the pixel differences are close to zero: The filter outputs roughly zero.
+This classic hand-designed filter is called the <a href="https://en.wikipedia.org/wiki/Prewitt_operator">🔗 Prewitt operator</a>. The related <a href="https://en.wikipedia.org/wiki/Sobel_operator">🔗 Sobel operator</a> extends it by weighting the center row more heavily to also suppress noise.</p>
 </blockquote>
-<p>In machine learning, this is encoded in the optimization procedure. Choosing the right metric is therefore more than a technical detail.
-Let's review metrics for the task types we have considered so far. As a quick reference.</p>
-<p><strong>Regression metrics.</strong> <a href="../part-05-supervised-learning/02-linear-regression.html">🖝 Linear Regression</a> introduced MSE and MAE. Here, we add a third metric:</p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>What it emphasizes</th>
-<th>When to use it</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Mean Squared Error (MSE)</td>
-<td>Large errors penalized quadratically</td>
-<td>When large errors are disproportionately costly</td>
-</tr>
-<tr>
-<td>Mean Absolute Error (MAE)</td>
-<td>All errors weighted equally</td>
-<td>When error magnitude matters but outliers should not dominate</td>
-</tr>
-<tr>
-<td>Mean Absolute Percentage Error (MAPE)</td>
-<td>Relative error</td>
-<td>When errors should be proportional to the target magnitude</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Classification metrics.</strong> <a href="../part-05-supervised-learning/08-classification-evaluation.html">🖝 Classification Evaluation</a> introduced precision, recall, and F1 with a focus on mechanics. Here the focus shifts to alignment. Each metric encodes an implicit assumption about error costs.</p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>What it measures</th>
-<th>Implicit cost assumption</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Accuracy</td>
-<td>Fraction of correct predictions</td>
-<td>All errors cost the same; classes are balanced</td>
-</tr>
-<tr>
-<td>Precision</td>
-<td>Of predicted positives, fraction correct</td>
-<td>False alarms are more costly than misses</td>
-</tr>
-<tr>
-<td>Recall</td>
-<td>Of actual positives, fraction found</td>
-<td>Missed cases are more costly than false alarms</td>
-</tr>
-<tr>
-<td>F1</td>
-<td>Harmonic mean of precision and recall</td>
-<td>Both error types matter with potentially imbalanced classes</td>
-</tr>
-</tbody>
-</table>
-<p>Choosing a metric is choosing which of these cost assumptions best fits your problem. The next section makes that choice explicit and, where possible, quantitative.</p>
-<hr />
-<h2 id="from-standard-metrics-to-real-costs">From Standard Metrics to Real Costs</h2>
-<p>Standard classification metrics encode implicit cost assumptions. Accuracy treats every misclassification equally. F1 weights false positives and false negatives symmetrically. In most real applications, these assumptions do not hold.</p>
-<p>When you work on a problem, you have to ask: Is one of the error types more damaging in your domain?</p>
-<table>
-<thead>
-<tr>
-<th>Domain</th>
-<th>Critical error</th>
-<th>Primary metric</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Equipment fault detection</td>
-<td>FN (missed fault)</td>
-<td>Recall</td>
-</tr>
-<tr>
-<td>Medical screening</td>
-<td>FN (missed case)</td>
-<td>Recall</td>
-</tr>
-<tr>
-<td>Spam filtering</td>
-<td>FP (blocked real email)</td>
-<td>Precision</td>
-</tr>
-<tr>
-<td>Fraud detection</td>
-<td>FN (missed fraud)</td>
-<td>Recall</td>
-</tr>
-<tr>
-<td>Balanced binary classification</td>
-<td>Equal</td>
-<td>F1 or Accuracy</td>
-</tr>
-<tr>
-<td>Imbalanced binary classification</td>
-<td>Depends</td>
-<td>F1</td>
-</tr>
-</tbody>
-</table>
-<p>When costs can be quantified, for example as a Euro amount, a patient outcome, or a regulatory penalty, then the assumption can usually be made explicit.</p>
-<p>There is no "patent solution" for this. Here, we just provide a simple mathematical cost model.
-Let <span class="arithmatex">\(C_{FP}\)</span> be the cost of one false positive and <span class="arithmatex">\(C_{FN}\)</span> the cost of one false negative. At false-positve and false-negative rates <span class="arithmatex">\(\rho_{FP}\)</span> and <span class="arithmatex">\(\rho_{FN}\)</span>, the expected cost per prediction is:</p>
-<div class="arithmatex">\[\hat{C} = \rho_{FP} \cdot C_{FP} + \rho_{FN} \cdot C_{FN}\]</div>
-<p>Minimizing <span class="arithmatex">\(\hat{C}\)</span> optimizes costs. The optimal classification threshold depends on the ratio <span class="arithmatex">\(C_{FN} / C_{FP}\)</span>: when missed cases cost ten times as much as false alarms, the threshold should shift toward predicting positive more aggressively, accepting more false alarms to avoid more misses.</p>
-<blockquote>
-<p><strong>Try it out:</strong> In <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a>, the "classification game demo" lets you set <span class="arithmatex">\(C_{FP}\)</span> and <span class="arithmatex">\(C_{FN}\)</span> and observe how this guides modeling choices. Try extreme cost ratios to see how precision and recall trade off against total cost.</p>
-</blockquote>
-<p>What cost model you use for business metrics really depends on your application and how rigorous you need to calculate numbers to satisfy business requirements.</p>
-<p>For business cases or pitching project for stakeholders, you'll also include something like the value you get from each prediction. This is usually not discussed in academic literature.</p>
-<p>In my <a href="https://www.researchgate.net/publication/392654581_Plan_Pitch_Perform_From_Data_Science_Idea_to_Funded_Project">✪ Plan. Pitch. Perform.</a> paper, I published a few additional real cost metrics, based on my industry experience. But even this is rather specific. Practical work requires taking the domain and business context into account. We also only touched modeling real costs for (binary) classification here. However, for any kind of data science problem, similar considerations apply.</p>
-<hr />
-<h2 id="when-metric-business-goal-and-ethics-diverge">When Metric, Business Goal, and Ethics Diverge</h2>
-<p>We already emphasized it: A  metric that accurately measures what it claims to measure may still fail to align with the actual goal. Three levels of misalignment deserve explicit attention.</p>
-<h3 id="metric-and-business-goal">Metric and business goal</h3>
-<p>Does improving the metric translate to a better outcome in practice?</p>
-<p>A model with lower mean average error may still be operationally useless if its worst-case errors occur precisely in the high-stakes cases. A model with high F1 may require a deployment infrastructure that makes the latency too high for real-time use.</p>
-<blockquote>
-<p><strong>Important:</strong> The metric is a proxy for business value, and proxies can miss.</p>
-</blockquote>
-<h3 id="metric-and-task">Metric and task</h3>
-<p>Does the metric capture what the task requires?</p>
-<p>A model evaluated on accuracy alone may ignore systematic failures on the minority class. A model evaluated on mean squared error may produce predictions that are accurate on average but occasionally catastrophically wrong.</p>
-<blockquote>
-<p><strong>Important:</strong> The metric must be sensitive to the failure modes that matter.</p>
-</blockquote>
-<h3 id="metric-and-ethics">Metric and ethics</h3>
-<p>Optimizing any metric can produce outcomes that are systematically unfair to particular groups. This happens because:</p>
+<p>A CNN learns filters that play the same role as in classic image processing, but the specific patterns are not designed by hand: They are learned from data.</p>
+<h3 id="what-makes-cnns-parameter-efficient">What makes CNNs parameter-efficient</h3>
+<p>CNNs embody two design choices that keep the parameter count manageable:</p>
 <ul>
-<li>The training data may underrepresent some groups, causing the model to be less accurate for them even though overall accuracy is high.</li>
-<li>A metric like accuracy treats all errors equally, even when errors are concentrated in a specific group.</li>
+<li><strong>Weight sharing</strong>: the same filter weights are applied at every spatial position. A filter that detects a vertical edge detects it wherever it appears in the image, without separate weights per location.</li>
+<li><strong>Pooling</strong>: after convolution, a <strong>max pooling</strong> operation downsamples the feature map by taking the maximum value in each local region. This reduces spatial resolution, retains the strongest activations, and gives the network some invariance to small translations.</li>
 </ul>
-<p>For example, models optimizing for recall in risk-scoring contexts (credit scoring, insurance pricing) may produce systematically higher false positive rates for disadvantaged groups, giving them worse scores than the data actually justifies.</p>
-<p>Fairness-aware metrics that <a href="https://en.wikipedia.org/wiki/Equalized_odds">🔗 equalize odds</a>, ensure demographic parity or calibrate otherwise for subgroups exist to detect and correct this kind of divergence. They usually do not replace the primary metric. However:</p>
+<p><center><img src="../media/plots/max_pooling_diagram.png" alt="" width="500px"/></center></p>
+
 <blockquote>
-<p><strong>Important:</strong> Fairness-aware metrics must be examined as additional dimensions whenever the model's decisions affect people's lives.</p>
+<p><strong>Analogy:</strong> Think of a filter as a stamp. You press the same stamp at every location on the image. Where the stamp matches the underlying pattern, the output is high; where it does not match, the output is low. The network learns what shape the stamp should be.</p>
 </blockquote>
-<p>The importance of AI ethics was introduced in <a href="../part-01-the-big-picture/03-ethics-and-responsibility.html">🖝 AI Ethics: A Primer</a>. Choosing a metric is where ethical framing becomes a concrete engineering decision.</p>
+<p>Stacking convolutional layers builds hierarchical representations. Early layers detect simple local patterns (edges, textures). Later layers combine those patterns into more complex structures (shapes, parts, objects). The idea is that the "receptive field" of a filter increases the deeper the layer. We'll discuss this further in the next nugget <a href="../part-08-deep-learning/04-dl-representations.md">🖝 What Deep Networks Learn: Representations</a>, here </p>
+<p><center><img src="../media/plots/cnn_depth_diagram.png" alt="visualization of filters and activations at increasing depths in a CNN. Layer 1: oriented edges and color gradients. Layer 2: corners and simple textures. Layer 3-4: more complex texture patterns and object parts" width="790px"/></center></p>
+
+<p>This feature hierarchy is the computational realization of the feature learning you saw in <a href="01-when-shallow-fails.html">🖝 When Shallow Models Fail</a>. 
+Here's another visualization of how the receptive field increases:</p>
+<p><center><img src="../media/plots/receptive_field_growth.png" alt="receptive field increases" width="790px"/></center></p>
+
+<!-- Source: LeCun et al. (1989) — foundational CNN paper for handwritten digit recognition. -->
+
+<hr />
+<h2 id="image-classification-and-softmax-function">Image Classification and Softmax-Function</h2>
+<p>Image classification assigns a single label to an entire image, just like for all <a href="../part-05-supervised-learning/07-classification-tasks.html">🖝 Classification Tasks</a>. Only that here the input is a pixel grid, and the output is a class or a probability distribution over a fixed set of classes.</p>
+<p>A standard classification CNN ends with one or more fully connected layers after the convolutional blocks. The final layer has one output neuron per class, with a <strong>softmax</strong> activation that normalizes the outputs into a valid probability distribution:</p>
+<div class="arithmatex">\[a_k = \frac{e^{z_k}}{\sum_{j=1}^{K} e^{z_j}} \quad \text{for } k = 1, \ldots, K.\]</div>
+<p>Here, for <span class="arithmatex">\(K\)</span> classes, the output neurons compute weighted sums <span class="arithmatex">\(z_1, \ldots, z_K\)</span> as usual, and softmax turns them into probabilities: <span class="arithmatex">\(a_k\)</span> is the predicted probability of class <span class="arithmatex">\(k\)</span>, and all outputs sum to 1, that is, <span class="arithmatex">\(\sum_k a_k = 1\)</span>.</p>
+<p>Below is a practical example: defect detection on a production line. A suitable camera system captures images of manufactured parts. For the training, each image is labeled "OK" or "defective". A CNN trains on labeled examples and learns to recognize the visual patterns that indicate a defect: This could be a scratch, a crack, or particles. At inference time, the trained model processes each new image and produces a probability of being defective as output.</p>
+<p><center><img src="../media/plots/defect_detection_pipeline.png" alt="sketch of a defect detection pipeline — camera → image → CNN → "OK / Defective" output with confidence score." width="790px"/></center></p>
+
+<p>The same architecture can handle multi-class problems (using the softmax function above). For example, a dataset with ten different defect types becomes a 10-class classification problem. The CNN structure remains the same, only the size of the output layer changes. Evaluation then uses multi-class metrics, as discussed in <a href="../part-05-supervised-learning/09-decision-trees.html">🖝 Decision Trees</a>.</p>
+<hr />
+<h2 id="cnn-based-image-tasks">CNN-Based Image Tasks</h2>
+<p>Classification is the simplest vision task. Once a CNN has learned to represent visual structure, those learned features can be adapted to a range of more demanding tasks. These extensions all build on the same convolutional backbone — the feature extractor — and add different output heads for different prediction targets.</p>
+<p>The main task families:</p>
+<ul>
+<li>
+<p><strong>Classification</strong> as above - simply output a label or distribution per input image.</p>
+</li>
+<li>
+<p><strong>Object detection</strong> locates and classifies multiple objects within the same image. The output is a set of bounding boxes with class labels and confidence scores. Popular architectures: YOLO, SSD, Faster R-CNN. The key difference from classification: the model must predict <em>where</em> objects are, not just <em>what</em> is in the image.</p>
+</li>
+<li>
+<p><strong>Semantic segmentation</strong> assigns a class label to every pixel. The output is a full image mask, where each pixel is colored according to its class (road, building, sky). Architectures like FCN and U-Net use an encoder-decoder structure: the encoder extracts features at decreasing resolution; the decoder reconstructs full-resolution predictions.</p>
+</li>
+<li>
+<p><strong>Instance segmentation</strong> extends semantic segmentation by distinguishing individual object instances. Two adjacent objects of the same class get different instance masks. Mask R-CNN is the standard architecture.</p>
+</li>
+</ul>
+<p><center><img src="../media/plots/cv_task_families.png" alt=" overview graphic showing the five task families side by side — a single image annotated five ways: (1) label only, (2) bounding boxes, (3) pixel-level class colors, (4) per-instance masks, (5) keypoint dots." width="780px"/></center></p>
+
+<p>Beyond the four families mentioned above:</p>
+<ul>
+<li>
+<p><strong>Keypoint and pose estimation</strong> detects specific landmark points on objects — joint positions on a human body, corners of a document. The model predicts a spatial location (<span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span> coordinates) for each keypoint rather than a class label.</p>
+</li>
+<li>
+<p><strong>Super-resolution</strong> reconstructs a high-resolution image from a low-resolution input. The model learns to recover plausible detail that the low-resolution input cannot contain.</p>
+</li>
+</ul>
 <blockquote>
-<p><strong>Discussion:</strong> A model predicts whether a patient should receive a specialist referral. The development team optimized for overall accuracy. After deployment, a clinical audit shows that patients from a particular region are referred at a much lower rate than baseline clinical practice would suggest, while patients from wealthier regions are referred at a higher rate. What does this finding suggest about the metric choice? What would you do before the next deployment?</p>
+<p><strong>Note:</strong> You do not need to master any of these architectures to apply them. Pretrained models for most of these tasks are available off the shelf. The conceptual map above tells you <em>which task type to reach for</em> when you face a specific vision problem.</p>
 </blockquote>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Metrics are optimization targets: the model gets better at exactly what it is measured on. Choosing the wrong metric produces a model that achieves the metric while failing the goal.</li>
-<li>False positives and false negatives have different costs in different domains.</li>
-<li>Match the primary metric to the error type that is most costly in your application: recall when misses are costly, precision when false alarms are costly, F1 when both matter and classes are imbalanced.</li>
-<li>Alignment of metrics must be checked at three levels: with business goals, with task, and with ethics. Optimizing a technically correct metric can still produce systematically unfair outcomes if the metric does not account for disparate impact across groups.</li>
+<li>A convolutional layer applies a small learned filter across an image, detecting local patterns at every spatial position. Weight sharing and pooling keep the parameter count manageable and give the network spatial invariance.</li>
+<li>Stacking convolutional layers builds a feature hierarchy: edges in early layers, shapes and parts in later layers.</li>
+<li>Image classification maps a whole image to a label. The same CNN backbone extends to harder tasks: object detection (where + what), semantic segmentation (per-pixel class), instance segmentation (per-object mask), keypoint estimation, and super-resolution.</li>
+<li>These task families all reuse the same convolutional backbone. Understanding the task family helps you choose the right architecture and the right pretrained starting point.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="03-baselines.html">&lt;-- Baselines and the Good-Enough Bar</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-explainability.html">Explainability --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="02-deep-networks.html">&lt;-- Building Blocks of Deep Networks</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-dl-representations.md">What Deep Networks Learn: Representations --&gt;</a></p>
 </blockquote>
 <p>Script v1.6 (2026-07-08) · FGN</p>
 

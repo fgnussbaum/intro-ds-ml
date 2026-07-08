@@ -1699,17 +1699,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        References
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2329,6 +2318,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-08-deep-learning/03-cnns.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convolutional Neural Networks (CNNs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2558,6 +2575,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2678,17 +2722,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        References
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2724,7 +2757,6 @@
 <li><a href="#interpreting-trees">Interpreting Trees</a></li>
 <li><a href="#summary">Summary</a></li>
 <li><a href="#bonus-building-the-tree">Bonus: Building the Tree</a></li>
-<li><a href="#references">References</a></li>
 </ul>
 <h2 id="decision-trees_1">Decision Trees</h2>
 <p>A <strong>decision tree</strong> is a flowchart. Each internal node tests one feature against a threshold. Each branch follows one outcome of that test. Each leaf assigns a class label via the leaf's majority class (so among the training examples that end in this leaf). To classify a new example, you walk from the root to a leaf, following the branches that match the example's feature values.</p>
@@ -2820,7 +2852,7 @@ Up to this point, precision, recall, and F1 were defined for a <strong>binary</s
 </ul>
 <hr />
 <h2 id="bonus-building-the-tree">Bonus: Building the Tree</h2>
-<p>The standard recursive procedure is <strong>Hunt's Algorithm</strong> (Tan et al., 2020):</p>
+<p>The standard recursive procedure is <strong>Hunt's Algorithm</strong> <a href="../references.html#tan2020">(Tan et al., 2020)</a>:</p>
 <ol>
 <li>If all training records at the current node belong to the same class, make that node a leaf.</li>
 <li>Otherwise, choose the feature and threshold that best separates the records and split. Distribute records to the child nodes accordingly.</li>
@@ -2851,15 +2883,12 @@ The second term is a size-weighted average of child entropies. A good split prod
 <div class="arithmatex">\[G(v) = 1 - \sum_c p_v(c)^2\]</div>
 <p>Both entropy and gini select nearly identical splits in practice, so you can just use the default (Gini) from <code>DecisionTreeClassifier</code>.
 In practice, Gini is slightly faster (no logarithm), entropy produces a sharper penalty on mixed nodes.</p>
-<hr />
-<h2 id="references">References</h2>
-<p>Tan, P.-N., Steinbach, M., Karpatne, A., &amp; Kumar, V. (2020). <em>Introduction to Data Mining</em> (2nd ed.). Pearson.</p>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
 <p><strong>Navigation:</strong> <a href="08-classification-evaluation.html">&lt;-- Classification Evaluation</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="10-random-forests.html">Random Forests --&gt;</a></p>
 </blockquote>
-<p>Script v1.5 (2026-06-24) · FGN</p>
+<p>Script v1.6 (2026-07-08) · FGN</p>
 
 
 

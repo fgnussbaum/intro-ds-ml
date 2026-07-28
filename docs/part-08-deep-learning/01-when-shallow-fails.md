@@ -6,7 +6,7 @@
 
 **Requires**: [Start Simple](../part-06-reflection/02-start-simple.md)
 
-**Motivation**: Throughout Parts V and VI, you built predictive models from structured data: each input feature already had a clear meaning, a measurement scale, and an interpretable relationship to the target. [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md), [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md), and [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md) are powerful tools within that setting. According to [🖝 Start Simple](../part-06-reflection/02-start-simple.md), these models should be tried first unless there is proper justification that they may not be well-suited for a task. For example, what happens when your input happens to be images of handwriting, a long-running sensor vibration data, or free-text notes? 
+**Motivation**: Throughout Parts V and VI, you built predictive models from structured data: each input feature already had a clear meaning, a measurement scale, and an interpretable relationship to the target. [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md), [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md), and [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md) are powerful tools within that setting. According to [🖝 Start Simple](../part-06-reflection/02-start-simple.md), these models should be tried first unless there is proper justification that they may not be well-suited for a task. For example, what happens when your input happens to be images of handwriting, a long-running sensor vibration data, or free-text notes?
 
 > In this nugget, you'll see the decision-boundary limits of linear models and trees, understand why hand-crafting features from raw signals quickly becomes infeasible, and learn how these limitations motivate the deep learning approach.
 
@@ -33,7 +33,7 @@ However, some boundaries are not well-behaved curves. They are interlocking regi
 
 ## The Need for Learned Features
 
-**Deep learning** replaces manually crafted features with **learned features**: the model itself discovers which patterns in the raw input are predictive, guided only by the training data and the loss function. You train a model that has to figure out the features itself.
+**Deep learning** [(LeCun et al., 2015)](../references.md#lecun2015) replaces manually crafted features with **learned features**: the model itself discovers which patterns in the raw input are predictive, guided only by the training data and the loss function. You train a model that has to figure out the features itself.
 
 This shift is what makes deep learning useful where simpler methods hit a wall: It applies to domains where the raw input has structure that matters, but that structure is hard to specify in advance. The main application domains break along input type:
 
@@ -81,4 +81,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Building Blocks of Deep Networks -->](02-deep-networks.md)
 
-Script v1.6 (2026-07-08) · FGN
+Script v1.7 (2026-07-28) · FGN

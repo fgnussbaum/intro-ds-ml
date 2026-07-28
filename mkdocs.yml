@@ -77,6 +77,11 @@ nav:
     - When Shallow Models Fail: part-08-deep-learning/01-when-shallow-fails.md
     - Building Blocks of Deep Networks: part-08-deep-learning/02-deep-networks.md
     - Convolutional Neural Networks (CNNs): part-08-deep-learning/03-cnns.md
+    - "What Deep Networks Learn: Representations": part-08-deep-learning/04-dl-representations.md
+    - Transfer Learning: part-08-deep-learning/05-transfer-learning.md
+    - Autoencoders: part-08-deep-learning/06-autoencoder.md
+    - Transformers: part-08-deep-learning/07-transformers.md
+    - "Deep Learning in Practice: Choosing and Applying": part-08-deep-learning/08-dl-in-practice.md
   - Appendix:
     - Overview: part-zz-appendix/00-index.md
     - Beyond Tabular Data: part-zz-appendix/01-beyond-tabular-eda.md

@@ -124,4 +124,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Distributions](06-eda-distributions.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Understanding: Best Practices -->](08-eda-best-practices.md)
 
-Script v1.6 (2026-07-08) · FGN
+Script v1.7 (2026-07-28) · FGN

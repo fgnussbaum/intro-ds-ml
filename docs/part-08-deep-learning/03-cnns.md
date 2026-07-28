@@ -8,8 +8,6 @@
 
 **Motivation**: A fully connected layer treats every pixel as an independent input feature. For a 256×256 image, that is 65,536 inputs: the first hidden layer has thousands of neurons, meaning tens of millions of weights from the first layer alone. More critically, a fully connected layer has no built-in notion that pixel (10,10) and pixel (11,10) are neighbors. Convolutional neural networks solve both problems at once: They drastically reduce the number of parameters and they explicitly exploit the spatial structure of the image.
 
-TBD: rework
-
 > In this nugget, you'll see how convolution filters help detecting local patterns by sliding over the image, how stacking convolutional layers builds hierarchical image representations, and how CNNs are the starting point for a family of specialized vision tasks far beyond basic classification.
 
 ## Table of Contents
@@ -21,7 +19,7 @@ TBD: rework
 
 ## Convolution as Local Pattern Detection
 
-A **convolutional layer** applies a small filter (also called a **kernel**) to a local region of the input image, slides it across the entire image, and produces a **feature map**. The filter is a small grid of weights that is learned during training, for example a $3 \times 3$ matrix, show by the orange box in the figure:
+A **convolutional layer** applies a small filter (also called a **kernel**) to a local region of the input image, slides it across the entire image, and produces a **feature map**. The filter is a small grid of weights that is learned during training, for example a $3 \times 3$ matrix, show by the orange box in the figure. This architecture traces back to the neocognitron [(Fukushima, 1980)](../references.md#fukushima1980), which introduced convolution and downsampling layers for shift-invariant pattern recognition; LeCun et al. later combined this architecture with backpropagation training for handwritten digit recognition [(LeCun et al., 1998)](../references.md#lecun1998).
 
 <p><center><img src="../media/plots/conv_filter_diagram.png" alt="a 5×5 image with a 3×3 filter sliding over it. Arrows show the filter position and the corresponding output value in the feature map" width="500px"/></center></p>
 
@@ -43,16 +41,14 @@ CNNs embody two design choices that keep the parameter count manageable:
 
 > **Analogy:** Think of a filter as a stamp. You press the same stamp at every location on the image. Where the stamp matches the underlying pattern, the output is high; where it does not match, the output is low. The network learns what shape the stamp should be.
 
-Stacking convolutional layers builds hierarchical representations. Early layers detect simple local patterns (edges, textures). Later layers combine those patterns into more complex structures (shapes, parts, objects). The idea is that the "receptive field" of a filter increases the deeper the layer. We'll discuss this further in the next nugget [🖝 What Deep Networks Learn: Representations](../part-08-deep-learning/04-dl-representations.md), here 
+Stacking convolutional layers builds hierarchical representations. Early layers detect simple local patterns (edges, textures). Later layers combine those patterns into more complex structures (shapes, parts, objects). The idea is that the "receptive field" of a filter increases the deeper the layer. We'll discuss this further in the next nugget [🖝 What Deep Networks Learn: Representations](../part-08-deep-learning/04-dl-representations.md), here
 
 <p><center><img src="../media/plots/cnn_depth_diagram.png" alt="visualization of filters and activations at increasing depths in a CNN. Layer 1: oriented edges and color gradients. Layer 2: corners and simple textures. Layer 3-4: more complex texture patterns and object parts" width="790px"/></center></p>
 
-This feature hierarchy is the computational realization of the feature learning you saw in [🖝 When Shallow Models Fail](../part-08-deep-learning/01-when-shallow-fails.md). 
+This feature hierarchy is the computational realization of the feature learning you saw in [🖝 When Shallow Models Fail](../part-08-deep-learning/01-when-shallow-fails.md).
 Here's another visualization of how the receptive field increases:
 
 <p><center><img src="../media/plots/receptive_field_growth.png" alt="receptive field increases" width="790px"/></center></p>
-
-<!-- Source: LeCun et al. (1989) — foundational CNN paper for handwritten digit recognition. -->
 
 ---
 
@@ -76,7 +72,8 @@ The same architecture can handle multi-class problems (using the softmax functio
 
 ## CNN-Based Image Tasks
 
-Classification is the simplest vision task. Once a CNN has learned to represent visual structure, those learned features can be adapted to a range of more demanding tasks. These extensions all build on the same convolutional backbone — the feature extractor — and add different output heads for different prediction targets.
+Classification is the simplest vision task. Once a CNN has learned to represent visual structure, those learned features can be adapted to a range of more demanding tasks. All of these extensions *can* build on the same convolutional backbone, which functionally serves as the **feature extractor**.
+The different task families just add different output heads for their specific prediction targets.
 
 The main task families:
 
@@ -92,7 +89,7 @@ The main task families:
 
 Beyond the four families mentioned above:
 
-- **Keypoint and pose estimation** detects specific landmark points on objects — joint positions on a human body, corners of a document. The model predicts a spatial location ($x$, $y$ coordinates) for each keypoint rather than a class label.
+- **Keypoint and pose estimation** detects specific landmark points on objects, for example, joint positions on a human body or corners of a document. The model predicts a spatial location ($x$, $y$ coordinates) for each keypoint rather than a class label.
 
 - **Super-resolution** reconstructs a high-resolution image from a low-resolution input. The model learns to recover plausible detail that the low-resolution input cannot contain.
 
@@ -114,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Building Blocks of Deep Networks](02-deep-networks.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What Deep Networks Learn: Representations -->](04-dl-representations.md)
 
-Script v1.6 (2026-07-08) · FGN
+Script v1.7 (2026-07-28) · FGN

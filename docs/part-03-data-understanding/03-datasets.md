@@ -20,7 +20,7 @@
 
 ## From Attributes to a Dataset
 
-A **dataset** is a collection of objects, each described by the same set of attributes. 
+A **dataset** is a collection of objects, each described by the same set of attributes.
 Specifically, for tabular datasets,
 
 - the rows correspond to the objects (which are also called records, data objects, instances, or observations),
@@ -143,4 +143,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Types and Measurement Scales](02-data-types.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Descriptive Statistics -->](04-eda-descriptive-stats.md)
 
-Script v1.6 (2026-07-08) · FGN
+Script v1.7 (2026-07-28) · FGN

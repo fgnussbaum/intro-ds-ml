@@ -94,7 +94,11 @@ $$R^2 = 1 - \frac{\sum_{j=1}^{n_\text{test}} (y_j - \hat{y}_j)^2}{\sum_{j=1}^{n_
 
 Here, the numerator represents the unexplained variance left in the residuals, and the denominator represents the total variance of the target.
 
-A perfect model yields $R^2 = 1$, and the baseline model that always predicts the mean yields $R^2 = 0$. Negative values are possible when the model is worse than the mean baseline (see also [🖝 Baselines and the Good-Enough Bar](../part-06-reflection/03-baselines.md)). R² is unit-free, which makes it easy to compare models across different targets and scales.
+- A perfect model yields $R^2 = 1$.
+- The "dummy" baseline model that always predicts the training-set mean from [🖝 Baselines and the Good-Enough Bar](../part-06-reflection/03-baselines.md) would yield $R^2 = 0$ if evaluated on that same training set. However, in practice, evaluation is on a held-out test set, where $R^2$ is then usually just slightly off from 0, since the training mean rarely equals the test set's own mean exactly.
+- Negative $R^2$ values are possible whenever a model does worse than the test-set mean would.
+
+R² is unit-free, which makes it easy to compare models across different targets and scales.
 
 > **Discussion 2:** Is trying to predict `tip` from `total_bill` really an interesting question? Or could there actually ba a far more interesting question? (Data science is about finding good questions: Here's one - can you spot it?)
 
@@ -146,4 +150,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Supervised Learning](01-supervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Gradient Descent -->](03-gradient-descent.md)
 
-Script v1.6 (2026-07-08) · FGN
+Script v1.7 (2026-07-28) · FGN

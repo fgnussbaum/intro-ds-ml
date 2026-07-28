@@ -27,9 +27,9 @@ This course is organized in parts. Each parts has several "nuggets": small diges
 | [Part VIII: Deep Learning](part-08-deep-learning/00-index.md) | deep networks, CNNs, representations, transfer learning, autoencoder, transformers | 8 |
 | [Appendix](part-zz-appendix/00-index.md) | beyond tabular, regression in depth, SVMs (all TBD) | x |
 
-TBD: parts VIII, IX, Appendix.
+TBD: parts IX, Appendix.
 
-Generally, the course script is work in progress; you'll likely find a few unresolved TODOs along the way. Finalization is planned by Dec 2026 latest.
+Generally, the course script is work in progress; you'll likely find a few unresolved TODOs along the way. Finalization is planned by roughly Dec 2026.
 
 ---
 

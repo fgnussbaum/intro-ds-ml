@@ -54,7 +54,7 @@ Here's an example from the interactive demo: a fully connected network for binar
 
 <p><center><img src="../media/demos-screenshots/neural-network.png" alt="simple neural network" width="740px"/></center></p>
 
-To compute the output of a neural network, a **forward pass** is used. Computations flow from left to right: each layer transforms its input into a new representation by applying its weights and activation. Each transformation extracts more abstract structure from the input.
+To compute the output of a neural network, a **forward pass** is used (see also the figure in the training section below). Computations flow from left to right: each layer transforms its input into a new representation by applying its weights and activation. Each transformation extracts more abstract structure from the input.
 
 ### Architecture choices
 
@@ -76,19 +76,19 @@ As with all machine learning models already discussed in this course, the loss m
 
 Training adjusts all weights in the network to minimize the loss. This requires the gradient of the loss with respect to every weight. Intuitively, the gradient informs the optimizer which direction to step.
 
-**Backpropagation** computes these gradients efficiently. Starting from the output, it applies the chain rule of calculus layer by layer, propagating the gradient signal backward through the network. The result is the exact gradient for every weight, computed in one backward pass.
+**Backpropagation** [(Rumelhart et al., 1986)](../references.md#rumelhart1986) computes these gradients efficiently. Starting from the output, it applies the chain rule of calculus layer by layer, propagating the gradient signal backward through the network. The result is the exact gradient for every weight, computed in one backward pass.
 
 <!-- Figure: the same fully connected network with arrows showing the forward pass (data flowing right) and the backward pass (gradient signal flowing left). Caption: "Forward pass computes predictions; backward pass propagates error gradients to every weight." -->
 
+<p><center><img src="../media/plots/forward_backward_pass.png" alt="forward and backward pass, fully connected classification network" width="790px"/></center></p>
+
 > **Note:** Backpropagation is not a learning algorithm on its own, it just computes gradients. [🖝 Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md)-like algorithms clarify how actual updates to parameters are carried out. The two work together: "backprop" computes the direction, the optimizer takes the step.
 
-With gradients in hand, **gradient descent** updates each weight by a small step opposite to the gradient. This is the same algorithm from [🖝 Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md), now applied to all parameters simultaneously.
-
-The practical default optimizer for deep networks is **Adam** (Adaptive Moment Estimation). Adam extends gradient descent with per-parameter adaptive learning rates and momentum, which makes it converge faster on most tasks and requires less manual tuning of the learning rate.
+The practical default optimizer for deep networks is **Adam** (Adaptive Moment Estimation) [(Kingma & Ba, 2015)](../references.md#kingma2015). Adam extends gradient descent with per-parameter adaptive learning rates and momentum, which makes it converge faster on most tasks and requires less manual tuning of the learning rate.
 
 To avoid overfitting during training, two standard techniques are:
 
-- **Dropout** randomly zeroes a fraction of neurons during each training step, forcing the network to develop redundant representations rather than relying on individual neurons.
+- **Dropout** [(Srivastava et al., 2014)](../references.md#srivastava2014) randomly zeroes a fraction of neurons during each training step, forcing the network to develop redundant representations rather than relying on individual neurons.
 - **Early stopping** monitors validation loss during training and saves the model at its minimum.
 
 > **Discussion:** Dropout adds noise to training; early stopping halts optimization before convergence. Both improve generalization despite seemingly making training worse or shorter. Why does adding noise or stopping early prevent overfitting, and what assumption about the training data do both interventions exploit?
@@ -98,8 +98,8 @@ To avoid overfitting during training, two standard techniques are:
 ## Summary
 
 - A neuron computes a weighted sum of its inputs, adds a bias, and passes the result through an activation function. The nonlinearity, sigmoid for output probabilities and ReLU for hidden layers, is what allows networks to represent non-linear relationships.
-- Deep networks stack neurons into layers. Architecture choices, number of layers, neurons per layer, and activation functions, determine the network's capacity. The output layer and loss function are chosen jointly to match the task: cross-entropy for classification, mean squared error for regression.
-- The forward pass builds progressively more abstract representations. Backpropagation computes gradients for all weights simultaneously by applying the chain rule from output to input. Gradient descent, or in practice the Adam optimizer, uses these gradients to update all weights.
+- Deep networks stack neurons into layers. Architecture choices involve number of layers, neurons per layer, and activation functions. The output layer and loss function are chosen to match the task: for example, cross-entropy for classification, mean squared error for regression.
+- The forward pass builds progressively more abstract representations. Backpropagation computes gradients for all weights simultaneously by applying the chain rule from output to input. Gradient descent (in practice the Adam optimizer) uses these gradients to update weights.
 - Dropout and early stopping are standard training-time techniques to reduce overfitting.
 
 As always: Happy learning, happy life! 🫶
@@ -109,4 +109,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- When Shallow Models Fail](01-when-shallow-fails.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Convolutional Neural Networks (CNNs) -->](03-cnns.md)
 
-Script v1.6 (2026-07-08) · FGN
+Script v1.7 (2026-07-28) · FGN

@@ -125,4 +125,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Preparing Non-Tabular Data -->](02-beyond-tabular-prep.md)
 
-Script v1.6 (2026-07-08) · FGN
+Script v1.7 (2026-07-28) · FGN

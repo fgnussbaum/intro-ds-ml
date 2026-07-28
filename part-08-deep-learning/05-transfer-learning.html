@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/03-regression-depth.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-08-deep-learning/05-transfer-learning.html">
       
       
-        <link rel="prev" href="02-beyond-tabular-prep.html">
+        <link rel="prev" href="04-dl-representations.html">
       
       
-        <link rel="next" href="04-statistical-significance.html">
+        <link rel="next" href="06-autoencoder.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Regression: Interpretation and Assumptions - Intro to Data Science & ML</title>
+        <title>Transfer Learning - Intro to Data Science & ML</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#regression-interpretation-and-assumptions" class="md-skip">
+        <a href="#transfer-learning" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Regression: Interpretation and Assumptions
+              Transfer Learning
             
           </span>
         </div>
@@ -2048,18 +2048,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -2080,320 +2082,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
     Part VIII: Deep Learning
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/00-index.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/01-when-shallow-fails.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    When Shallow Models Fail
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/02-deep-networks.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Building Blocks of Deep Networks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/03-cnns.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Convolutional Neural Networks (CNNs)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/04-dl-representations.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    What Deep Networks Learn: Representations
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/05-transfer-learning.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Transfer Learning
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/06-autoencoder.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Autoencoders
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/07-transformers.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Transformers
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/08-dl-in-practice.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Deep Learning in Practice: Choosing and Applying
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Appendix
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Appendix
   
 
           </label>
@@ -2434,14 +2128,14 @@
   
   
     <li class="md-nav__item">
-      <a href="01-beyond-tabular-eda.html" class="md-nav__link">
+      <a href="01-when-shallow-fails.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Beyond Tabular Data
+    When Shallow Models Fail
   
 
     
@@ -2462,14 +2156,70 @@
   
   
     <li class="md-nav__item">
-      <a href="02-beyond-tabular-prep.html" class="md-nav__link">
+      <a href="02-deep-networks.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Preparing Non-Tabular Data
+    Building Blocks of Deep Networks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-cnns.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convolutional Neural Networks (CNNs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-dl-representations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Deep Networks Learn: Representations
   
 
     
@@ -2506,7 +2256,7 @@
   <span class="md-ellipsis">
     
   
-    Regression: Interpretation and Assumptions
+    Transfer Learning
   
 
     
@@ -2517,14 +2267,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="03-regression-depth.html" class="md-nav__link md-nav__link--active">
+      <a href="05-transfer-learning.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Regression: Interpretation and Assumptions
+    Transfer Learning
   
 
     
@@ -2561,77 +2311,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#r2-what-the-number-really-means" class="md-nav__link">
+  <a href="#the-pretrained-model-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
-        R²: What the Number Really Means
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="R²: What the Number Really Means">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#three-ways-r2-can-mislead" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Three ways R² can mislead
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-regression-coefficients" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reading Regression Coefficients
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Reading Regression Coefficients">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#direction-magnitude-and-scale" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Direction, magnitude, and scale
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multicollinearity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multicollinearity
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assumptions-of-linear-regression" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assumptions of Linear Regression
+        The Pretrained Model Idea
       
     </span>
   </a>
@@ -2639,63 +2322,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#residual-diagnostics" class="md-nav__link">
+  <a href="#fine-tuning-vs-feature-extraction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Residual Diagnostics
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Residual Diagnostics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#residual-vs-fitted-plot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Residual vs. fitted plot
+        Fine-Tuning vs. Feature Extraction
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#scale-location-plot" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#the-dl-ecosystem-pytorch-keras-hugging-face" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scale-location plot
+        The DL Ecosystem: PyTorch, Keras, Hugging Face
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#q-q-plot-of-residuals" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Q-Q plot of residuals
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-to-do-about-violations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What to do about violations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2726,7 +2370,257 @@
   
   
     <li class="md-nav__item">
-      <a href="04-statistical-significance.html" class="md-nav__link">
+      <a href="06-autoencoder.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autoencoders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-transformers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-dl-in-practice.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Learning in Practice: Choosing and Applying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendix
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-zz-appendix/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-zz-appendix/01-beyond-tabular-eda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beyond Tabular Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-zz-appendix/02-beyond-tabular-prep.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparing Non-Tabular Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regression: Interpretation and Assumptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2754,7 +2648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2847,77 +2741,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#r2-what-the-number-really-means" class="md-nav__link">
+  <a href="#the-pretrained-model-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
-        R²: What the Number Really Means
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="R²: What the Number Really Means">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#three-ways-r2-can-mislead" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Three ways R² can mislead
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-regression-coefficients" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reading Regression Coefficients
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Reading Regression Coefficients">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#direction-magnitude-and-scale" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Direction, magnitude, and scale
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multicollinearity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multicollinearity
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assumptions-of-linear-regression" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assumptions of Linear Regression
+        The Pretrained Model Idea
       
     </span>
   </a>
@@ -2925,63 +2752,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#residual-diagnostics" class="md-nav__link">
+  <a href="#fine-tuning-vs-feature-extraction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Residual Diagnostics
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Residual Diagnostics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#residual-vs-fitted-plot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Residual vs. fitted plot
+        Fine-Tuning vs. Feature Extraction
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#scale-location-plot" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#the-dl-ecosystem-pytorch-keras-hugging-face" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scale-location plot
+        The DL Ecosystem: PyTorch, Keras, Hugging Face
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#q-q-plot-of-residuals" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Q-Q plot of residuals
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-to-do-about-violations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What to do about violations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3014,81 +2802,93 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="02-beyond-tabular-prep.html">&lt;-- Preparing Non-Tabular Data</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-statistical-significance.html">Statistical Significance --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-dl-representations.html">&lt;-- What Deep Networks Learn: Representations</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-autoencoder.html">Autoencoders --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="regression-interpretation-and-assumptions">Regression: Interpretation and Assumptions</h1>
-<p><strong>Requires</strong>: <a href="../part-05-supervised-learning/02-linear-regression.html">Linear Regression</a></p>
-<p><strong>Motivation</strong>: Your regression model on the ESS dataset gives <span class="arithmatex">\(R^2 = 0.18\)</span>. You know that number measures something, but what exactly? A statsmodels summary also reports heteroscedasticity flags and coefficient p-values that are easy to skip. These are not footnotes. <span class="arithmatex">\(R^2\)</span> can overstate fit when predictors are added carelessly, violated assumptions can silently bias coefficient estimates, and unread residual plots hide systematic errors that RMSE alone will not catch.</p>
+<h1 id="transfer-learning">Transfer Learning</h1>
+<p><strong>Requires</strong>: <a href="04-dl-representations.html">What Deep Networks Learn: Representations</a> · <a href="03-cnns.html">Convolutional Neural Networks (CNNs)</a></p>
+<p><strong>Motivation</strong>: Training <a href="03-cnns.html">🖝 Convolutional Neural Networks (CNNs)</a> from scratch on a large benchmark datasets is expensive when first done. Few engineering teams can afford that. But in many applications, you don't have to. The representations a network learns on one large dataset often generalize to entirely different tasks. A model trained to classify cats, dogs, vehicles, and so on has learned to extract features like edges, textures, shapes. These are often useful for classifying cracks in concrete or defects in printed circuit boards, too. This is <strong>transfer learning</strong>, and it dramatically lowers the barrier to applying deep learning in practice.</p>
 <blockquote>
-<p>In this optional nugget you will learn what <span class="arithmatex">\(R^2\)</span> truly measures and when it misleads, how to interpret regression coefficients in multi-variable models, the classical assumptions that linear regression relies on, and how to diagnose violations with residual plots.</p>
-<p><strong>Context:</strong> This nugget extends <a href="../part-05-supervised-learning/02-linear-regression.html">🖝 Linear Regression</a>. You should be comfortable with fitting a multi-variable model and reading MSE and RMSE before working through this material.</p>
+<p>In this nugget, you'll see how to use pretrained models on new tasks, learn how to choose between feature extraction and fine-tuning, and get an overview of three major frameworks in the deep learning ecosystem.</p>
 </blockquote>
-<p>TBD: Rework</p>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#r²-what-the-number-really-means">R²: What the Number Really Means</a></li>
-<li><a href="#reading-regression-coefficients">Reading Regression Coefficients</a></li>
-<li><a href="#assumptions-of-linear-regression">Assumptions of Linear Regression</a></li>
-<li><a href="#residual-diagnostics">Residual Diagnostics</a></li>
+<li><a href="#the-pretrained-model-idea">The Pretrained Model Idea</a></li>
+<li><a href="#fine-tuning-vs-feature-extraction">Fine-Tuning vs. Feature Extraction</a></li>
+<li><a href="#the-dl-ecosystem-pytorch-keras-hugging-face">The DL Ecosystem: PyTorch, Keras, Hugging Face</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="r2-what-the-number-really-means">R²: What the Number Really Means</h2>
-<p><span class="arithmatex">\(R^2\)</span> is defined as:</p>
-<div class="arithmatex">\[R^2 = 1 - \frac{\text{SS}_\text{res}}{\text{SS}_\text{tot}}\]</div>
-<p>where <span class="arithmatex">\(\text{SS}_\text{res} = \sum(y_i - \hat{y}_i)^2\)</span> is the residual sum of squares — the variance the model could not explain — and <span class="arithmatex">\(\text{SS}_\text{tot} = \sum(y_i - \bar{y})^2\)</span> is the total variance in the target relative to the training mean.</p>
-<p>When <span class="arithmatex">\(R^2 = 0.18\)</span> on the ESS happiness model: the model explains 18% of the variance in happiness. The remaining 82% is unexplained. That is not the same as saying the model is useless — happiness is genuinely noisy, and partial explanation can still be valuable — but it requires comparing against baselines and domain expectations before drawing conclusions.</p>
-<h3 id="three-ways-r2-can-mislead">Three ways R² can mislead</h3>
-<p><strong>Adding predictors always increases R² on the training set.</strong> Every new variable, even a random one, explains a small slice of training-set noise. Training-set <span class="arithmatex">\(R^2\)</span> therefore overstates quality when comparing models with different numbers of features.</p>
-<p><strong>Adjusted R²</strong> corrects for this:</p>
-<div class="arithmatex">\[\bar{R}^2 = 1 - (1 - R^2)\frac{n-1}{n-k-1}\]</div>
-<p>where <span class="arithmatex">\(n\)</span> is the number of training samples and <span class="arithmatex">\(k\)</span> is the number of predictors. Adjusted <span class="arithmatex">\(R^2\)</span> penalizes for complexity and can decrease when a new predictor contributes less signal than it costs. Use adjusted <span class="arithmatex">\(R^2\)</span> when comparing models that differ in the number of features.</p>
-<p><strong>Test-set R² can be negative.</strong> <span class="arithmatex">\(R^2\)</span> is defined relative to the training-set mean <span class="arithmatex">\(\bar{y}\)</span>. If the model's predictions on the test set are worse than simply predicting <span class="arithmatex">\(\bar{y}\)</span>, test-set <span class="arithmatex">\(R^2\)</span> goes below zero. This is a clear signal of overfitting or a distribution shift between train and test.</p>
-<p><strong>R² says nothing about whether residuals are well-behaved.</strong> Two datasets can have identical <span class="arithmatex">\(R^2\)</span> values while one has systematic patterns in its residuals that the model has entirely missed — Anscombe's quartet is the canonical demonstration (Anscombe, 1973). <span class="arithmatex">\(R^2\)</span> is always read alongside residual diagnostics, not in isolation.</p>
+<h2 id="the-pretrained-model-idea">The Pretrained Model Idea</h2>
+<p>When a deep network trains on a large dataset, it learns a general-purpose feature hierarchy. For images, this means edge detectors, texture patterns, shape components. These are representations that describe visual structure at multiple levels of abstraction, as you saw in <a href="04-dl-representations.html">🖝 What Deep Networks Learn: Representations</a>. These representations must not belong to the specific classes the model was trained on.</p>
+<p>This is why it becomes interesting to use a <strong>pretrained model</strong>, that is, a network that has already been trained on a large dataset. You can take this model (specifically, its weights) and adapt it to your task by replacing or retraining the final output layer. This reuses the feature extractor from the pre-trained model:</p>
+<p><center><img src="../media/plots/transfer_learning.png" width="740px"/></center></p>
+
+<p>In the head, you might adjust to your new task: For example, you might only want to classify three types of surface defects instead of the 1000 ImageNet categories that the pretrained model was trained to classify.
+Indeed, <strong>ImageNet</strong> <a href="../references.html#deng2009">(Deng et al., 2009)</a> (a dataset of 1.2 million images across 1,000 classes) is a canonical source for pretrained models: Models like ResNet, EfficientNet, and VGG were trained on ImageNet and are freely available.</p>
+<p>The same principle applies to all data modalities: train once on a massive dataset, then adapt to a specific domain. The adaptation cost is far lower than training from scratch.</p>
+<ul>
+<li>For text, pretrained models were trained on billions of documents from the web. BERT, GPT, and their successors learned rich representations of language meaning from this data.</li>
+</ul>
+<!-- TODO: source or links -->
+
+<blockquote>
+<p><strong>Analogy:</strong> Think of a pretrained model as an experienced technician who has worked in many factories. She/he has seen many defect types and learned what subtle visual signals to look for. When faced with a new situation in a new facility, experienced workers do not start from scratch, but instead apply their general experience and only need to learn the specifics of the new setting.</p>
+</blockquote>
 <hr />
-<h2 id="reading-regression-coefficients">Reading Regression Coefficients</h2>
-<p>In a multi-variable model:</p>
-<div class="arithmatex">\[h_w(\mathbf{x}) = w_0 + w_1 x_1 + w_2 x_2 + \cdots + w_n x_n\]</div>
-<p>each coefficient <span class="arithmatex">\(w_j\)</span> means: holding all other predictors constant, a one-unit increase in <span class="arithmatex">\(x_j\)</span> is associated with a <span class="arithmatex">\(w_j\)</span> change in the predicted target. The phrase "holding all other predictors constant" is the critical qualifier — it distinguishes a regression coefficient from a simple correlation.</p>
-<p>In the ESS model, if health (<span class="arithmatex">\(x_1\)</span>) has coefficient 0.4 and social contact frequency (<span class="arithmatex">\(x_2\)</span>) has coefficient 0.1, it means: among people with the same social contact frequency, a one-unit difference in health corresponds to 0.4 more predicted happiness points.</p>
-<h3 id="direction-magnitude-and-scale">Direction, magnitude, and scale</h3>
-<p>A positive coefficient means the predictor moves with the target; a negative coefficient means it moves against it. Coefficient magnitudes are on the scale of the input feature, so raw magnitudes are not comparable across features unless inputs are standardized first. After standardization, the magnitude of each coefficient becomes the number of standard deviations by which the prediction changes per standard deviation of the predictor.</p>
-<h3 id="multicollinearity">Multicollinearity</h3>
-<p>If two predictors are strongly correlated with each other, the model can distribute their joint effect across both coefficients in many equivalent ways. The individual coefficients become unstable: small changes in the data can flip their signs or inflate their magnitudes. This is <strong>multicollinearity</strong>. The model's overall predictions can remain accurate, but individual coefficient interpretation becomes unreliable.</p>
-<p>A practical signal: adding or removing one correlated predictor causes large swings in another predictor's coefficient. Variance Inflation Factor (VIF) formalizes this — a VIF above 5–10 for a predictor signals problematic collinearity. Ridge regression (L2 regularization) shrinks unstable coefficients and is a practical remedy; this is one of the core motivations for <a href="../part-05-supervised-learning/05-regularized-regression.html">🖝 Regularized Regression</a>.</p>
+<h2 id="fine-tuning-vs-feature-extraction">Fine-Tuning vs. Feature Extraction</h2>
+<p>There are two main strategies for adapting a pretrained model to a new task <a href="../references.html#yosinski2014">(Yosinski et al., 2014)</a>.</p>
+<ul>
+<li><strong>Feature extraction</strong>: freeze all layers of the pretrained model except the output layer. The frozen layers produce embeddings of your new input images. You train only the new output layer on your task-specific labeled data. The pretrained feature extractor is used as-is.</li>
+<li><strong>Fine-tuning</strong>: unfreeze some or all pretrained layers and continue training on your new dataset with a <em>small</em> learning rate. This allows the pretrained weights to adjust to the specific characteristics of your new domain, while retaining most of what was learned on the original dataset.</li>
+</ul>
+<p>The choice depends on the size of your (labeled) dataset:</p>
+<table>
+<thead>
+<tr>
+<th>Dataset size</th>
+<th>Similarity to pretrained domain</th>
+<th>Recommended strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small (&lt; few thousand)</td>
+<td>High</td>
+<td>Feature extraction</td>
+</tr>
+<tr>
+<td>Small</td>
+<td>Low</td>
+<td>Feature extraction + fine-tune last few layers</td>
+</tr>
+<tr>
+<td>Large</td>
+<td>Any</td>
+<td>Fine-tune the full network</td>
+</tr>
+</tbody>
+</table>
+<p>When labeled data is scarce, fine-tuning the entire network on a small dataset risks overfitting: The network has more parameters than your data can constrain. In this case, using fixed pretrained layers and only training the small new head is usually better.</p>
+<p>As a concrete example, object detection models like <a href="https://docs.ultralytics.com/">🔗 YOLO</a> are built on a pretrained CNN <strong>backbone</strong> (a standard classification network with the last layer removed). The backbone extracts visual features and only the detection head is added and trained for the specific detection task.</p>
 <hr />
-<h2 id="assumptions-of-linear-regression">Assumptions of Linear Regression</h2>
-<p>The ordinary least-squares estimator is optimal under five classical assumptions. Violations do not necessarily make the model unusable, but they affect what you can reliably claim about the coefficients and significance tests.</p>
-<p><strong>1. Linearity.</strong> The relationship between each feature and the target is linear. If the true relationship is curved, the model will systematically underpredict in some ranges and overpredict in others. Check with scatter plots of each predictor against the target and with the residual vs. fitted plot.</p>
-<p><strong>2. Independence of errors.</strong> The residual for one observation does not depend on the residual for another. This is violated by time series (consecutive observations are correlated) and by clustered data (e.g., students within the same school share unmeasured influences). When errors are correlated, standard errors underestimate variability and significance tests become anti-conservative.</p>
-<p><strong>3. Homoscedasticity.</strong> The variance of residuals is constant across all levels of the fitted value. The opposite, <strong>heteroscedasticity</strong>, means residuals fan out or compress as the fitted value changes. A model predicting income might have small, tight errors for low earners and large, scattered errors for high earners. Heteroscedasticity does not bias coefficient estimates, but it inflates or deflates standard errors, making significance tests unreliable.</p>
-<p><strong>4. Normality of residuals.</strong> Residuals are approximately normally distributed around zero. This matters for confidence intervals and p-values. With large samples, the central limit theorem provides robustness. With small samples, strong non-normality distorts significance tests.</p>
-<p><strong>5. No perfect multicollinearity.</strong> No predictor can be expressed as an exact linear combination of others. Perfect collinearity makes the least-squares system unsolvable. Near-perfect collinearity is the practical concern, addressed in the previous section.</p>
-<hr />
-<h2 id="residual-diagnostics">Residual Diagnostics</h2>
-<p>Residual plots are the standard tool for checking whether assumptions hold. Scikit-learn does not produce them; use <code>statsmodels</code> or construct them manually from the residuals array (<code>y_test - model.predict(X_test)</code>).</p>
-<h3 id="residual-vs-fitted-plot">Residual vs. fitted plot</h3>
-<p>Plot residuals <span class="arithmatex">\(y_i - \hat{y}_i\)</span> on the y-axis against fitted values <span class="arithmatex">\(\hat{y}_i\)</span> on the x-axis. Under correct assumptions, residuals should scatter randomly around zero with constant spread and no pattern. A curved band indicates non-linearity. A funnel shape — residuals spreading wider as the fitted value increases — indicates heteroscedasticity.</p>
-<p>[Figure: Two side-by-side residual vs. fitted plots. Left: random scatter around zero with constant spread — assumptions satisfied. Right: fan-shaped spread increasing with fitted value — heteroscedasticity present.]</p>
-<h3 id="scale-location-plot">Scale-location plot</h3>
-<p>Plot the square root of the absolute standardized residuals against fitted values. A roughly flat loess line confirms homoscedasticity. An upward slope confirms heteroscedasticity.</p>
-<h3 id="q-q-plot-of-residuals">Q-Q plot of residuals</h3>
-<p>Plot the quantiles of the standardized residuals against the quantiles of a standard normal distribution. Points falling on the diagonal confirm approximate normality. Heavy tails — points curving away from the diagonal at both ends — signal a distribution heavier than normal.</p>
-<h3 id="what-to-do-about-violations">What to do about violations</h3>
-<p>Heteroscedasticity can often be reduced by transforming the target (e.g., log-transforming income, which has a right-skewed distribution). Non-linearity may call for polynomial features or a tree-based model. Correlated errors in time-series data require specialized methods outside the scope of this course.</p>
+<h2 id="the-dl-ecosystem-pytorch-keras-hugging-face">The DL Ecosystem: PyTorch, Keras, Hugging Face</h2>
+<p>The practical landscape for deep learning work is vast. Here's just a quick overview of a few tools and libraries for orientation.</p>
+<p><strong>PyTorch</strong> (Meta AI) is a widely-used framework for deep learning research and production. It defines the network architecture explicitly as Python code, making it flexible and debuggable. Many new architectures are published with PyTorch implementations. If you plan to build custom models, train on your own data pipeline, or work close to the research frontier, PyTorch is often a good choice.</p>
+<p><strong>TensorFlow (including Keras)</strong>: Especially Keras is a high-level API designed for quick prototyping. It abstracts away the details of the training loop, making it faster to build and iterate on standard architectures. The tradeoff is less control over the training process. Good for getting a working model quickly when the task is standard.</p>
+<p><strong>Hugging Face</strong> is a model hub and library focused on pretrained models, especially for text and multimodal tasks. It hosts thousands of pretrained models ready for download and fine-tuning, along with the <code>transformers</code> library for working with them. For transfer learning, Hugging Face is the starting point for the vast majority of practitioners.</p>
+<p>What you'll need and choose will largely depend on the application and which resources are availaible in which eco-system.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li><span class="arithmatex">\(R^2\)</span> measures the fraction of target variance explained. It always increases with more predictors on the training set; use adjusted <span class="arithmatex">\(R^2\)</span> when comparing models of different sizes.</li>
-<li>Test-set <span class="arithmatex">\(R^2\)</span> can be negative when a model is worse than predicting the training mean — a reliable sign of overfitting or distribution shift.</li>
-<li>Regression coefficients carry a "holding all else constant" interpretation. Multicollinearity destabilizes individual coefficients even when overall predictions remain accurate.</li>
-<li>Linear regression rests on five assumptions: linearity, independence of errors, homoscedasticity, normality of residuals, and no perfect multicollinearity.</li>
-<li>Residual vs. fitted, scale-location, and Q-Q plots are the standard diagnostic tools. Always inspect them before reporting model results.</li>
+<li>Pretrained models transfer knowledge across tasks. A model trained on a large dataset has learned general-purpose representations that generalize to new domains.</li>
+<li>Feature extraction freezes pretrained layers and trains only the output head. Fine-tuning continues training the pretrained layers on the new dataset. Dataset size and domain similarity determine which strategy is better.</li>
+<li>Major ecosystem tools: PyTorch for flexible custom work, Keras for rapid prototyping, Hugging Face for accessing pretrained models.</li>
+<li>Transfer learning is often the practical default for deep learning on limited labeled data.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="02-beyond-tabular-prep.html">&lt;-- Preparing Non-Tabular Data</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-statistical-significance.html">Statistical Significance --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-dl-representations.html">&lt;-- What Deep Networks Learn: Representations</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-autoencoder.html">Autoencoders --&gt;</a></p>
 </blockquote>
 <p>Script v1.7 (2026-07-28) · FGN</p>
 

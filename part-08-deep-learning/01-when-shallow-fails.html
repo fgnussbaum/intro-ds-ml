@@ -2307,6 +2307,146 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-dl-representations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Deep Networks Learn: Representations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="05-transfer-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transfer Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-autoencoder.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autoencoders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-transformers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-dl-in-practice.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Learning in Practice: Choosing and Applying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2667,7 +2807,7 @@
 <hr />
 <h1 id="when-shallow-models-fail">When Shallow Models Fail</h1>
 <p><strong>Requires</strong>: <a href="../part-06-reflection/02-start-simple.html">Start Simple</a></p>
-<p><strong>Motivation</strong>: Throughout Parts V and VI, you built predictive models from structured data: each input feature already had a clear meaning, a measurement scale, and an interpretable relationship to the target. <a href="../part-05-supervised-learning/02-linear-regression.html">🖝 Linear Regression</a>, <a href="../part-05-supervised-learning/09-decision-trees.html">🖝 Decision Trees</a>, and <a href="../part-05-supervised-learning/10-random-forests.html">🖝 Random Forests</a> are powerful tools within that setting. According to <a href="../part-06-reflection/02-start-simple.html">🖝 Start Simple</a>, these models should be tried first unless there is proper justification that they may not be well-suited for a task. For example, what happens when your input happens to be images of handwriting, a long-running sensor vibration data, or free-text notes? </p>
+<p><strong>Motivation</strong>: Throughout Parts V and VI, you built predictive models from structured data: each input feature already had a clear meaning, a measurement scale, and an interpretable relationship to the target. <a href="../part-05-supervised-learning/02-linear-regression.html">🖝 Linear Regression</a>, <a href="../part-05-supervised-learning/09-decision-trees.html">🖝 Decision Trees</a>, and <a href="../part-05-supervised-learning/10-random-forests.html">🖝 Random Forests</a> are powerful tools within that setting. According to <a href="../part-06-reflection/02-start-simple.html">🖝 Start Simple</a>, these models should be tried first unless there is proper justification that they may not be well-suited for a task. For example, what happens when your input happens to be images of handwriting, a long-running sensor vibration data, or free-text notes?</p>
 <blockquote>
 <p>In this nugget, you'll see the decision-boundary limits of linear models and trees, understand why hand-crafting features from raw signals quickly becomes infeasible, and learn how these limitations motivate the deep learning approach.</p>
 </blockquote>
@@ -2687,7 +2827,7 @@
 <p>However, some boundaries are not well-behaved curves. They are interlocking regions, nested shapes, or patterns with spatial structure (like the pixels in images). When the domain becomes too complex, manual featuring engineering is often no longer feasible: It is no longer possible to enumerate all the relevant patterns.</p>
 <hr />
 <h2 id="the-need-for-learned-features">The Need for Learned Features</h2>
-<p><strong>Deep learning</strong> replaces manually crafted features with <strong>learned features</strong>: the model itself discovers which patterns in the raw input are predictive, guided only by the training data and the loss function. You train a model that has to figure out the features itself.</p>
+<p><strong>Deep learning</strong> <a href="../references.html#lecun2015">(LeCun et al., 2015)</a> replaces manually crafted features with <strong>learned features</strong>: the model itself discovers which patterns in the raw input are predictive, guided only by the training data and the loss function. You train a model that has to figure out the features itself.</p>
 <p>This shift is what makes deep learning useful where simpler methods hit a wall: It applies to domains where the raw input has structure that matters, but that structure is hard to specify in advance. The main application domains break along input type:</p>
 <table>
 <thead>
@@ -2706,17 +2846,17 @@
 <tr>
 <td>Text and sequences</td>
 <td>Document classification, machine translation</td>
-<td><a href="../part-08-deep-learning/07-transformers.md">🖝 Transformers</a></td>
+<td><a href="07-transformers.html">🖝 Transformers</a></td>
 </tr>
 <tr>
 <td>Audio waveforms</td>
 <td>Fault detection, speech</td>
-<td>1D CNNs, <a href="../part-08-deep-learning/07-transformers.md">🖝 Transformers</a></td>
+<td>1D CNNs, <a href="07-transformers.html">🖝 Transformers</a></td>
 </tr>
 <tr>
 <td>Time series</td>
 <td>Sensor data, financial signals</td>
-<td><a href="03-cnns.html">🖝 Convolutional Neural Networks (CNNs)</a>, RNNs, <a href="../part-08-deep-learning/07-transformers.md">🖝 Transformers</a></td>
+<td><a href="03-cnns.html">🖝 Convolutional Neural Networks (CNNs)</a>, RNNs, <a href="07-transformers.html">🖝 Transformers</a></td>
 </tr>
 <tr>
 <td>Tabular data</td>
@@ -2736,10 +2876,10 @@
 <p>Here are some typical questions to consider when heading for deep learning solutions:</p>
 <ul>
 <li>Are the inputs images, audio signals, or free text? If so, feature engineering by hand is likely to be the bottleneck.</li>
-<li>Is labeled training data available, or only unlabeled data? The answer changes whether you head toward supervised or unsupervised deep learning approaches (for example, <a href="../part-08-deep-learning/06-autoencoder.md">🖝 Autoencoders</a> for unsupervised)</li>
-<li>What compute resources do you have? Deep learning models are more expensive to train and deploy than shallow models (although techniques like <a href="../part-08-deep-learning/05-transfer-learning.md">🖝 Transfer Learning</a> help).</li>
+<li>Is labeled training data available, or only unlabeled data? The answer changes whether you head toward supervised or unsupervised deep learning approaches (for example, <a href="06-autoencoder.html">🖝 Autoencoders</a> for unsupervised)</li>
+<li>What compute resources do you have? Deep learning models are more expensive to train and deploy than shallow models (although techniques like <a href="05-transfer-learning.html">🖝 Transfer Learning</a> help).</li>
 </ul>
-<p><em>See also: <a href="../part-08-deep-learning/08-dl-in-practice.md">🖝 Deep Learning in Practice: Choosing and Applying</a> for a structured decision guide that uses these questions.</em></p>
+<p><em>See also: <a href="08-dl-in-practice.html">🖝 Deep Learning in Practice: Choosing and Applying</a> for a structured decision guide that uses these questions.</em></p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
@@ -2753,7 +2893,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-deep-networks.html">Building Blocks of Deep Networks --&gt;</a></p>
 </blockquote>
-<p>Script v1.6 (2026-07-08) · FGN</p>
+<p>Script v1.7 (2026-07-28) · FGN</p>
 
 
 

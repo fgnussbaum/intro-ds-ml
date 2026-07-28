@@ -2346,6 +2346,146 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-08-deep-learning/04-dl-representations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Deep Networks Learn: Representations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-08-deep-learning/05-transfer-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transfer Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-08-deep-learning/06-autoencoder.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autoencoders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-08-deep-learning/07-transformers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-08-deep-learning/08-dl-in-practice.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Learning in Practice: Choosing and Applying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2803,7 +2943,12 @@ For many input features, visualizing the hyperplane is difficult, so we often de
 <p><strong>Coefficient of Determination (R²):</strong> measures what fraction of the variance in the target is explained by the model:</p>
 <div class="arithmatex">\[R^2 = 1 - \frac{\sum_{j=1}^{n_\text{test}} (y_j - \hat{y}_j)^2}{\sum_{j=1}^{n_\text{test}} (y_j - \bar{y})^2} = 1 - \frac{\text{MSE}}{\text{Var}(y)}.\]</div>
 <p>Here, the numerator represents the unexplained variance left in the residuals, and the denominator represents the total variance of the target.</p>
-<p>A perfect model yields <span class="arithmatex">\(R^2 = 1\)</span>, and the baseline model that always predicts the mean yields <span class="arithmatex">\(R^2 = 0\)</span>. Negative values are possible when the model is worse than the mean baseline (see also <a href="../part-06-reflection/03-baselines.html">🖝 Baselines and the Good-Enough Bar</a>). R² is unit-free, which makes it easy to compare models across different targets and scales.</p>
+<ul>
+<li>A perfect model yields <span class="arithmatex">\(R^2 = 1\)</span>.</li>
+<li>The "dummy" baseline model that always predicts the training-set mean from <a href="../part-06-reflection/03-baselines.html">🖝 Baselines and the Good-Enough Bar</a> would yield <span class="arithmatex">\(R^2 = 0\)</span> if evaluated on that same training set. However, in practice, evaluation is on a held-out test set, where <span class="arithmatex">\(R^2\)</span> is then usually just slightly off from 0, since the training mean rarely equals the test set's own mean exactly.</li>
+<li>Negative <span class="arithmatex">\(R^2\)</span> values are possible whenever a model does worse than the test-set mean would.</li>
+</ul>
+<p>R² is unit-free, which makes it easy to compare models across different targets and scales.</p>
 <blockquote>
 <p><strong>Discussion 2:</strong> Is trying to predict <code>tip</code> from <code>total_bill</code> really an interesting question? Or could there actually ba a far more interesting question? (Data science is about finding good questions: Here's one - can you spot it?)</p>
 </blockquote>
@@ -2838,7 +2983,7 @@ If you tilt or shift a candidate line slightly, every residual <span class="arit
 <blockquote>
 <p><strong>Navigation:</strong> <a href="01-supervised-learning.html">&lt;-- Supervised Learning</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-gradient-descent.html">Gradient Descent --&gt;</a></p>
 </blockquote>
-<p>Script v1.6 (2026-07-08) · FGN</p>
+<p>Script v1.7 (2026-07-28) · FGN</p>
 
 
 

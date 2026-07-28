@@ -2324,6 +2324,146 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-dl-representations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Deep Networks Learn: Representations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="05-transfer-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transfer Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-autoencoder.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autoencoders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-transformers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-dl-in-practice.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Learning in Practice: Choosing and Applying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2738,7 +2878,7 @@ a &amp;= f(z)
 <p>Here's an example from the interactive demo: a fully connected network for binary classification, with one input layer of <span class="arithmatex">\(2\)</span> features, two hidden layers of neurons, and one output neuron with a sigmoid activation. The output is the model's predicted probability that the input belongs to the positive class.</p>
 <p><center><img src="../media/demos-screenshots/neural-network.png" alt="simple neural network" width="740px"/></center></p>
 
-<p>To compute the output of a neural network, a <strong>forward pass</strong> is used. Computations flow from left to right: each layer transforms its input into a new representation by applying its weights and activation. Each transformation extracts more abstract structure from the input.</p>
+<p>To compute the output of a neural network, a <strong>forward pass</strong> is used (see also the figure in the training section below). Computations flow from left to right: each layer transforms its input into a new representation by applying its weights and activation. Each transformation extracts more abstract structure from the input.</p>
 <h3 id="architecture-choices">Architecture choices</h3>
 <p>The example above is just one of many. For building actual applications with neurals networks, there are many architectures to choose frmo. Some work better than others, some are designed for specific prediction tasks and data domains.</p>
 <blockquote>
@@ -2754,17 +2894,18 @@ a &amp;= f(z)
 <hr />
 <h2 id="training-backpropagation-and-optimization">Training: Backpropagation and Optimization</h2>
 <p>Training adjusts all weights in the network to minimize the loss. This requires the gradient of the loss with respect to every weight. Intuitively, the gradient informs the optimizer which direction to step.</p>
-<p><strong>Backpropagation</strong> computes these gradients efficiently. Starting from the output, it applies the chain rule of calculus layer by layer, propagating the gradient signal backward through the network. The result is the exact gradient for every weight, computed in one backward pass.</p>
+<p><strong>Backpropagation</strong> <a href="../references.html#rumelhart1986">(Rumelhart et al., 1986)</a> computes these gradients efficiently. Starting from the output, it applies the chain rule of calculus layer by layer, propagating the gradient signal backward through the network. The result is the exact gradient for every weight, computed in one backward pass.</p>
 <!-- Figure: the same fully connected network with arrows showing the forward pass (data flowing right) and the backward pass (gradient signal flowing left). Caption: "Forward pass computes predictions; backward pass propagates error gradients to every weight." -->
+
+<p><center><img src="../media/plots/forward_backward_pass.png" alt="forward and backward pass, fully connected classification network" width="790px"/></center></p>
 
 <blockquote>
 <p><strong>Note:</strong> Backpropagation is not a learning algorithm on its own, it just computes gradients. <a href="../part-05-supervised-learning/03-gradient-descent.html">🖝 Gradient Descent</a>-like algorithms clarify how actual updates to parameters are carried out. The two work together: "backprop" computes the direction, the optimizer takes the step.</p>
 </blockquote>
-<p>With gradients in hand, <strong>gradient descent</strong> updates each weight by a small step opposite to the gradient. This is the same algorithm from <a href="../part-05-supervised-learning/03-gradient-descent.html">🖝 Gradient Descent</a>, now applied to all parameters simultaneously.</p>
-<p>The practical default optimizer for deep networks is <strong>Adam</strong> (Adaptive Moment Estimation). Adam extends gradient descent with per-parameter adaptive learning rates and momentum, which makes it converge faster on most tasks and requires less manual tuning of the learning rate.</p>
+<p>The practical default optimizer for deep networks is <strong>Adam</strong> (Adaptive Moment Estimation) <a href="../references.html#kingma2015">(Kingma &amp; Ba, 2015)</a>. Adam extends gradient descent with per-parameter adaptive learning rates and momentum, which makes it converge faster on most tasks and requires less manual tuning of the learning rate.</p>
 <p>To avoid overfitting during training, two standard techniques are:</p>
 <ul>
-<li><strong>Dropout</strong> randomly zeroes a fraction of neurons during each training step, forcing the network to develop redundant representations rather than relying on individual neurons.</li>
+<li><strong>Dropout</strong> <a href="../references.html#srivastava2014">(Srivastava et al., 2014)</a> randomly zeroes a fraction of neurons during each training step, forcing the network to develop redundant representations rather than relying on individual neurons.</li>
 <li><strong>Early stopping</strong> monitors validation loss during training and saves the model at its minimum.</li>
 </ul>
 <blockquote>
@@ -2774,8 +2915,8 @@ a &amp;= f(z)
 <h2 id="summary">Summary</h2>
 <ul>
 <li>A neuron computes a weighted sum of its inputs, adds a bias, and passes the result through an activation function. The nonlinearity, sigmoid for output probabilities and ReLU for hidden layers, is what allows networks to represent non-linear relationships.</li>
-<li>Deep networks stack neurons into layers. Architecture choices, number of layers, neurons per layer, and activation functions, determine the network's capacity. The output layer and loss function are chosen jointly to match the task: cross-entropy for classification, mean squared error for regression.</li>
-<li>The forward pass builds progressively more abstract representations. Backpropagation computes gradients for all weights simultaneously by applying the chain rule from output to input. Gradient descent, or in practice the Adam optimizer, uses these gradients to update all weights.</li>
+<li>Deep networks stack neurons into layers. Architecture choices involve number of layers, neurons per layer, and activation functions. The output layer and loss function are chosen to match the task: for example, cross-entropy for classification, mean squared error for regression.</li>
+<li>The forward pass builds progressively more abstract representations. Backpropagation computes gradients for all weights simultaneously by applying the chain rule from output to input. Gradient descent (in practice the Adam optimizer) uses these gradients to update weights.</li>
 <li>Dropout and early stopping are standard training-time techniques to reduce overfitting.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
@@ -2783,7 +2924,7 @@ a &amp;= f(z)
 <blockquote>
 <p><strong>Navigation:</strong> <a href="01-when-shallow-fails.html">&lt;-- When Shallow Models Fail</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-cnns.html">Convolutional Neural Networks (CNNs) --&gt;</a></p>
 </blockquote>
-<p>Script v1.6 (2026-07-08) · FGN</p>
+<p>Script v1.7 (2026-07-28) · FGN</p>
 
 
 

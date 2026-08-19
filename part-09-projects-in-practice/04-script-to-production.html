@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/04-regression-depth.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-09-projects-in-practice/04-script-to-production.html">
       
       
+        <link rel="prev" href="03-stakeholder-communication.html">
+      
+      
+        <link rel="next" href="05-interface-design-integration.html">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>04 regression depth - Intro to Data Science & ML</title>
+        <title>From Script to Production System - Intro to Data Science & ML</title>
       
     
     
@@ -82,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#regression-interpretation-and-assumptions" class="md-skip">
+        <a href="#from-script-to-production-system" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              04 regression depth
+              From Script to Production System
             
           </span>
         </div>
@@ -2350,18 +2354,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
         
           
           <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
@@ -2371,7 +2377,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part IX: Projects in Practice
   
 
     
@@ -2382,12 +2388,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Appendix
+    Part IX: Projects in Practice
   
 
           </label>
@@ -2428,7 +2434,443 @@
   
   
     <li class="md-nav__item">
-      <a href="01-beyond-tabular-eda.html" class="md-nav__link">
+      <a href="01-crisp-dm-retrospective.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRISP-DM Retrospective: From Coursework to Real Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-pitching-a-ds-idea.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pitching a Data-Science Idea
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-stakeholder-communication.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stakeholder Communication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    From Script to Production System
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="04-script-to-production.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    From Script to Production System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-notebook-is-not-the-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Notebook Is Not the Product
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-infrastructure-databases-pipelines-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Infrastructure: Databases, Pipelines, APIs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-serving-calling-models-in-a-running-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Serving: Calling Models in a Running System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="05-interface-design-integration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface Design and Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-model-drift-monitoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Drift and Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-ethics-accountability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics and Accountability in Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-troubleshooting-pitfalls.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting, Pitfalls, and When to Ask for Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="09-your-advantage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Your Advantage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Appendix
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-zz-appendix/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-zz-appendix/01-beyond-tabular-eda.html" class="md-nav__link">
         
   
   
@@ -2456,7 +2898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-beyond-tabular-prep.html" class="md-nav__link">
+      <a href="../part-zz-appendix/02-beyond-tabular-prep.html" class="md-nav__link">
         
   
   
@@ -2484,7 +2926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2512,7 +2954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2540,7 +2982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2633,77 +3075,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#r2-what-the-number-really-means" class="md-nav__link">
+  <a href="#the-notebook-is-not-the-product" class="md-nav__link">
     <span class="md-ellipsis">
       
-        R²: What the Number Really Means
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="R²: What the Number Really Means">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#three-ways-r2-can-mislead" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Three ways R² can mislead
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-regression-coefficients" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reading Regression Coefficients
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Reading Regression Coefficients">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#direction-magnitude-and-scale" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Direction, magnitude, and scale
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multicollinearity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multicollinearity
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assumptions-of-linear-regression" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assumptions of Linear Regression
+        The Notebook Is Not the Product
       
     </span>
   </a>
@@ -2711,63 +3086,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#residual-diagnostics" class="md-nav__link">
+  <a href="#data-infrastructure-databases-pipelines-apis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Residual Diagnostics
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Residual Diagnostics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#residual-vs-fitted-plot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Residual vs. fitted plot
+        Data Infrastructure: Databases, Pipelines, APIs
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#scale-location-plot" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#model-serving-calling-models-in-a-running-system" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scale-location plot
+        Model Serving: Calling Models in a Running System
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#q-q-plot-of-residuals" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Q-Q plot of residuals
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-to-do-about-violations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What to do about violations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2800,82 +3136,113 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="03-logistic-regression.html">&lt;-- Logistic Regression</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-statistical-significance.html">Statistical Significance --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="03-stakeholder-communication.html">&lt;-- Stakeholder Communication</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-interface-design-integration.html">Interface Design and Integration --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="regression-interpretation-and-assumptions">Regression: Interpretation and Assumptions</h1>
-<p><strong>Requires</strong>: <a href="../part-05-supervised-learning/02-linear-regression.html">Linear Regression</a></p>
-<p><strong>Motivation</strong>: Your regression model on the ESS dataset gives <span class="arithmatex">\(R^2 = 0.18\)</span>. You know that number measures something, but what exactly? A statsmodels summary also reports heteroscedasticity flags and coefficient p-values that are easy to skip. These are not footnotes. <span class="arithmatex">\(R^2\)</span> can overstate fit when predictors are added carelessly, violated assumptions can silently bias coefficient estimates, and unread residual plots hide systematic errors that RMSE alone will not catch.</p>
+<h1 id="from-script-to-production-system">From Script to Production System</h1>
+<p><strong>Requires</strong>: <a href="01-crisp-dm-retrospective.html">CRISP-DM Retrospective: From Coursework to Real Projects</a> · <a href="../part-01-the-big-picture/05-academia-vs-business-ds.html">Academia vs. Business Data Science</a></p>
+<p><strong>Motivation</strong>: In <a href="../part-01-the-big-picture/05-academia-vs-business-ds.html">🖝 Academia vs. Business Data Science</a> we said business data science is judged by the value it delivers. This usually means the model has to run somewhere other than your laptop, on live data. This no longer works via one-off scripts or Jupyter-like notebooks, which are fine for learning and exploration. What does the shift to production actually require?</p>
 <blockquote>
-<p>In this optional nugget you will learn what <span class="arithmatex">\(R^2\)</span> truly measures and when it misleads, how to interpret regression coefficients in multi-variable models, the classical assumptions that linear regression relies on, and how to diagnose violations with residual plots.</p>
-<p><strong>Context:</strong> This nugget extends <a href="../part-05-supervised-learning/02-linear-regression.html">🖝 Linear Regression</a>. You should be comfortable with fitting a multi-variable model and reading MSE and RMSE before working through this material.</p>
+<p>This nugget maps why notebook code is not product code, how data flows through a running system, and two basic patterns for calling a model once it is deployed.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#r²-what-the-number-really-means">R²: What the Number Really Means</a></li>
-<li><a href="#reading-regression-coefficients">Reading Regression Coefficients</a></li>
-<li><a href="#assumptions-of-linear-regression">Assumptions of Linear Regression</a></li>
-<li><a href="#residual-diagnostics">Residual Diagnostics</a></li>
+<li><a href="#the-notebook-is-not-the-product">The Notebook Is Not the Product</a></li>
+<li><a href="#data-infrastructure-databases-pipelines-apis">Data Infrastructure: Databases, Pipelines, APIs</a></li>
+<li><a href="#model-serving-calling-models-in-a-running-system">Model Serving: Calling Models in a Running System</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="r2-what-the-number-really-means">R²: What the Number Really Means</h2>
-<p><span class="arithmatex">\(R^2\)</span> is defined as:</p>
-<div class="arithmatex">\[R^2 = 1 - \frac{\text{SS}_\text{res}}{\text{SS}_\text{tot}}\]</div>
-<p>where <span class="arithmatex">\(\text{SS}_\text{res} = \sum(y_i - \hat{y}_i)^2\)</span> is the residual sum of squares — the variance the model could not explain — and <span class="arithmatex">\(\text{SS}_\text{tot} = \sum(y_i - \bar{y})^2\)</span> is the total variance in the target relative to the training mean.</p>
-<p>When <span class="arithmatex">\(R^2 = 0.18\)</span> on the ESS happiness model: the model explains 18% of the variance in happiness. The remaining 82% is unexplained. That is not the same as saying the model is useless — happiness is genuinely noisy, and partial explanation can still be valuable — but it requires comparing against baselines and domain expectations before drawing conclusions.</p>
-<h3 id="three-ways-r2-can-mislead">Three ways R² can mislead</h3>
-<p><strong>Adding predictors always increases R² on the training set.</strong> Every new variable, even a random one, explains a small slice of training-set noise. Training-set <span class="arithmatex">\(R^2\)</span> therefore overstates quality when comparing models with different numbers of features.</p>
-<p><strong>Adjusted R²</strong> corrects for this:</p>
-<div class="arithmatex">\[\bar{R}^2 = 1 - (1 - R^2)\frac{n-1}{n-k-1}\]</div>
-<p>where <span class="arithmatex">\(n\)</span> is the number of training samples and <span class="arithmatex">\(k\)</span> is the number of predictors. Adjusted <span class="arithmatex">\(R^2\)</span> penalizes for complexity and can decrease when a new predictor contributes less signal than it costs. Use adjusted <span class="arithmatex">\(R^2\)</span> when comparing models that differ in the number of features.</p>
-<p><strong>Test-set R² can be negative.</strong> <span class="arithmatex">\(R^2\)</span> is defined relative to the training-set mean <span class="arithmatex">\(\bar{y}\)</span>. If the model's predictions on the test set are worse than simply predicting <span class="arithmatex">\(\bar{y}\)</span>, test-set <span class="arithmatex">\(R^2\)</span> goes below zero. This is a clear signal of overfitting or a distribution shift between train and test.</p>
-<p><strong>R² says nothing about whether residuals are well-behaved.</strong> Two datasets can have identical <span class="arithmatex">\(R^2\)</span> values while one has systematic patterns in its residuals that the model has entirely missed — Anscombe's quartet is the canonical demonstration (Anscombe, 1973). <span class="arithmatex">\(R^2\)</span> is always read alongside residual diagnostics, not in isolation.</p>
+<h2 id="the-notebook-is-not-the-product">The Notebook Is Not the Product</h2>
+<p>A notebook is a workbench:</p>
+<ul>
+<li>cells are ordered by the story of your exploration and you run them manually,</li>
+<li>program state accumulates invisibly (state = values of variables etc.),</li>
+<li>"it worked" means it worked once, just now, on the given data.</li>
+</ul>
+<p>All these are features for discovery and a liability for production.
+Production code has different obligations:</p>
+<table>
+<thead>
+<tr>
+<th>Notebook</th>
+<th>Production system</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Run manually, top to bottom</td>
+<td>Runs on a schedule or a trigger, unattended</td>
+</tr>
+<tr>
+<td>Hidden, accumulated state</td>
+<td>Reproducible from a clean start</td>
+</tr>
+<tr>
+<td>You fix it live</td>
+<td>Must handle bad input and errors</td>
+</tr>
+<tr>
+<td>Fixed datasets (often just one)</td>
+<td>New, unseen data continuously</td>
+</tr>
+<tr>
+<td>"It ran"</td>
+<td>Tested, versioned, monitored</td>
+</tr>
+</tbody>
+</table>
+<p>The gap is not about better algorithms: the model can be identical. It is about everything around the model - the "harness". Google's fourth <a href="https://developers.google.com/machine-learning/guides/rules-of-ml">🔗 rule of machine learning</a> captures it:</p>
+<blockquote>
+<p><strong>Best practice:</strong> Keep the first model simple and get the infrastructure right. A simple model on solid infrastructure beats a sophisticated one that only runs in your notebook.</p>
+</blockquote>
+<p>Speaking of best practices, in <a href="../part-04-data-preparation/06-prep-principles.html">🖝 Data Preparation Best Practices</a> you were urged to wrap preparation steps in a pipeline so they apply identically every time. Such pipelines are the seed of production code: They make preprocessing reproducible and portable.</p>
+<p>Moving to production is mostly software engineering, not machine learning. This is why real projects need engineers alongside data scientists. <em>See <a href="../part-02-ds-projects/03-team-project-basics.html">🖝 Working as a Team on a DS Project</a></em>.</p>
 <hr />
-<h2 id="reading-regression-coefficients">Reading Regression Coefficients</h2>
-<p>In a multi-variable model:</p>
-<div class="arithmatex">\[h_w(\mathbf{x}) = w_0 + w_1 x_1 + w_2 x_2 + \cdots + w_n x_n\]</div>
-<p>each coefficient <span class="arithmatex">\(w_j\)</span> means: holding all other predictors constant, a one-unit increase in <span class="arithmatex">\(x_j\)</span> is associated with a <span class="arithmatex">\(w_j\)</span> change in the predicted target. The phrase "holding all other predictors constant" is the critical qualifier — it distinguishes a regression coefficient from a simple correlation.</p>
-<p>In the ESS model, if health (<span class="arithmatex">\(x_1\)</span>) has coefficient 0.4 and social contact frequency (<span class="arithmatex">\(x_2\)</span>) has coefficient 0.1, it means: among people with the same social contact frequency, a one-unit difference in health corresponds to 0.4 more predicted happiness points.</p>
-<h3 id="direction-magnitude-and-scale">Direction, magnitude, and scale</h3>
-<p>A positive coefficient means the predictor moves with the target; a negative coefficient means it moves against it. Coefficient magnitudes are on the scale of the input feature, so raw magnitudes are not comparable across features unless inputs are standardized first. After standardization, the magnitude of each coefficient becomes the number of standard deviations by which the prediction changes per standard deviation of the predictor.</p>
-<h3 id="multicollinearity">Multicollinearity</h3>
-<p>If two predictors are strongly correlated with each other, the model can distribute their joint effect across both coefficients in many equivalent ways. The individual coefficients become unstable: small changes in the data can flip their signs or inflate their magnitudes. This is <strong>multicollinearity</strong>. The model's overall predictions can remain accurate, but individual coefficient interpretation becomes unreliable.</p>
-<p>A practical signal: adding or removing one correlated predictor causes large swings in another predictor's coefficient. Variance Inflation Factor (VIF) formalizes this — a VIF above 5–10 for a predictor signals problematic collinearity. Ridge regression (L2 regularization) shrinks unstable coefficients and is a practical remedy; this is one of the core motivations for <a href="../part-05-supervised-learning/05-regularized-regression.html">🖝 Regularized Regression</a>.</p>
+<h2 id="data-infrastructure-databases-pipelines-apis">Data Infrastructure: Databases, Pipelines, APIs</h2>
+<p>In a notebook, data typically is a CSV you load once. In production, data has to arrive, be shaped, and reach the model continuously. Three pieces recur:</p>
+<ul>
+<li><strong>Databases</strong> store the data the system reads from and writes to, rather than files scattered on a disk.</li>
+<li><strong>Pipelines</strong> move and transform data on a schedule or in response to events: pulling new records, cleaning them, computing features. This is your data-preparation code, promoted to run on its own.</li>
+<li><strong>APIs</strong> are the interfaces through which systems exchange data, letting your system pull from a sensor feed or an external service and expose results to others.</li>
+</ul>
+<p>The non-negotiable requirement tying these together: <strong>data reaching the deployed model must be prepared exactly as the training data was</strong>. If training standardized a feature using the training mean, production must apply that <em>same</em> stored mean, not recompute it from today's batch. Doing otherwise is a production form of preprocessing leakage that we discussed in <a href="../part-04-data-preparation/04-data-splits.html">🖝 Data Splits</a>. It can silently degrade predictions.</p>
+<!-- Figure: simple data-flow diagram, source (sensor/DB) to pipeline (clean + feature transform using stored parameters) to model to output store/consumer -->
+
 <hr />
-<h2 id="assumptions-of-linear-regression">Assumptions of Linear Regression</h2>
-<p>The ordinary least-squares estimator is optimal under five classical assumptions. Violations do not necessarily make the model unusable, but they affect what you can reliably claim about the coefficients and significance tests.</p>
-<p><strong>1. Linearity.</strong> The relationship between each feature and the target is linear. If the true relationship is curved, the model will systematically underpredict in some ranges and overpredict in others. Check with scatter plots of each predictor against the target and with the residual vs. fitted plot.</p>
-<p><strong>2. Independence of errors.</strong> The residual for one observation does not depend on the residual for another. This is violated by time series (consecutive observations are correlated) and by clustered data (e.g., students within the same school share unmeasured influences). When errors are correlated, standard errors underestimate variability and significance tests become anti-conservative.</p>
-<p><strong>3. Homoscedasticity.</strong> The variance of residuals is constant across all levels of the fitted value. The opposite, <strong>heteroscedasticity</strong>, means residuals fan out or compress as the fitted value changes. A model predicting income might have small, tight errors for low earners and large, scattered errors for high earners. Heteroscedasticity does not bias coefficient estimates, but it inflates or deflates standard errors, making significance tests unreliable.</p>
-<p><strong>4. Normality of residuals.</strong> Residuals are approximately normally distributed around zero. This matters for confidence intervals and p-values. With large samples, the central limit theorem provides robustness. With small samples, strong non-normality distorts significance tests.</p>
-<p><strong>5. No perfect multicollinearity.</strong> No predictor can be expressed as an exact linear combination of others. Perfect collinearity makes the least-squares system unsolvable. Near-perfect collinearity is the practical concern, addressed in the previous section.</p>
-<hr />
-<h2 id="residual-diagnostics">Residual Diagnostics</h2>
-<p>Residual plots are the standard tool for checking whether assumptions hold. Scikit-learn does not produce them; use <code>statsmodels</code> or construct them manually from the residuals array (<code>y_test - model.predict(X_test)</code>).</p>
-<h3 id="residual-vs-fitted-plot">Residual vs. fitted plot</h3>
-<p>Plot residuals <span class="arithmatex">\(y_i - \hat{y}_i\)</span> on the y-axis against fitted values <span class="arithmatex">\(\hat{y}_i\)</span> on the x-axis. Under correct assumptions, residuals should scatter randomly around zero with constant spread and no pattern. A curved band indicates non-linearity. A funnel shape — residuals spreading wider as the fitted value increases — indicates heteroscedasticity.</p>
-<p>[Figure: Two side-by-side residual vs. fitted plots. Left: random scatter around zero with constant spread — assumptions satisfied. Right: fan-shaped spread increasing with fitted value — heteroscedasticity present.]</p>
-<h3 id="scale-location-plot">Scale-location plot</h3>
-<p>Plot the square root of the absolute standardized residuals against fitted values. A roughly flat loess line confirms homoscedasticity. An upward slope confirms heteroscedasticity.</p>
-<h3 id="q-q-plot-of-residuals">Q-Q plot of residuals</h3>
-<p>Plot the quantiles of the standardized residuals against the quantiles of a standard normal distribution. Points falling on the diagonal confirm approximate normality. Heavy tails — points curving away from the diagonal at both ends — signal a distribution heavier than normal.</p>
-<h3 id="what-to-do-about-violations">What to do about violations</h3>
-<p>Heteroscedasticity can often be reduced by transforming the target (e.g., log-transforming income, which has a right-skewed distribution). Non-linearity may call for polynomial features or a tree-based model. Correlated errors in time-series data require specialized methods outside the scope of this course.</p>
+<h2 id="model-serving-calling-models-in-a-running-system">Model Serving: Calling Models in a Running System</h2>
+<p>Once the model and its pipeline are packaged, something has to <em>call</em> them on new data. This is <strong>model serving</strong>. It comes in two patterns:</p>
+<ul>
+<li>
+<p><strong>Batch serving.</strong> The model scores a whole set of records on a schedule. For example, score the day's transactions <em>every night</em> and write the results to a database for people to read in the morning. Simple, efficient, and enough for many problems where an answer within hours is fine.</p>
+</li>
+<li>
+<p><strong>Real-time serving.</strong> The model answers requests on demand, usually behind a <strong>REST API</strong>, which allows to post requests, which a server processes and returns a response.</p>
+</li>
+</ul>
+<p>For real-time serving, another system (client) sends all necessary input data in a request to a specific server <strong>endpoint</strong>. The server behind the API processes the request and returns a result in the response (e.g., the prediction). The shape of such an API call that reaches a <code>/predict</code> endpoint could look like:</p>
+<pre><code class="language-python"># A client sends features; the service returns a prediction.
+POST /predict   {&quot;temperature&quot;: 82.4, &quot;pressure&quot;: 1.7}
+# response:      {&quot;fault_risk&quot;: 0.91}
+</code></pre>
+<p>Real-time-serving is best when decisions are needed fast, such as approving a transaction while the customer is at the checkout. However, it buys responsiveness at the cost of complexity: the service must stay available and respond fast enough. If a model's prediction takes longer than the client caller can wait, even an accurate model is unusable, compare <a href="../part-06-reflection/04-aligning-metrics.html">🖝 Choosing and Aligning Metrics</a>. Choose the simpler batch pattern unless the use case genuinely demands real time.</p>
+<blockquote>
+<p><strong>Discussion:</strong> A more accurate model takes 800 milliseconds per prediction, and a simpler one only takes 20. The decision must be made in under 100 milliseconds. The simpler model is "worse" by every metric on your evaluation report. Which do you deploy, and what does that say about where a model's quality is actually decided?</p>
+</blockquote>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li><span class="arithmatex">\(R^2\)</span> measures the fraction of target variance explained. It always increases with more predictors on the training set; use adjusted <span class="arithmatex">\(R^2\)</span> when comparing models of different sizes.</li>
-<li>Test-set <span class="arithmatex">\(R^2\)</span> can be negative when a model is worse than predicting the training mean — a reliable sign of overfitting or distribution shift.</li>
-<li>Regression coefficients carry a "holding all else constant" interpretation. Multicollinearity destabilizes individual coefficients even when overall predictions remain accurate.</li>
-<li>Linear regression rests on five assumptions: linearity, independence of errors, homoscedasticity, normality of residuals, and no perfect multicollinearity.</li>
-<li>Residual vs. fitted, scale-location, and Q-Q plots are the standard diagnostic tools. Always inspect them before reporting model results.</li>
+<li>Notebooks are for exploration - production code must run unattended, reproducibly, and handle unseen data and errors on its own.</li>
+<li>Production data often arrives as a continuous flow through databases, pipelines, and APIs.</li>
+<li>The deployed model must receive data prepared with the <em>same stored parameters</em> and transformations as have been used during model training. This is to prevent pre-processing leakage and model degradation.</li>
+<li>Model serving is either batch (scheduled scoring, simple, good enough for most cases) or real-time (a REST API answering on demand, needed when decisions cannot wait but costlier to run within a latency budget).</li>
+<li>Get the infrastructure / deployment pipeline right early.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="03-logistic-regression.html">&lt;-- Logistic Regression</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-statistical-significance.html">Statistical Significance --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="03-stakeholder-communication.html">&lt;-- Stakeholder Communication</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-interface-design-integration.html">Interface Design and Integration --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.8 (2026-08-19) · FGN</p>
 
 
 

@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/04-prep-best-practices.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-09-projects-in-practice/05-interface-design-integration.html">
       
       
+        <link rel="prev" href="04-script-to-production.html">
+      
+      
+        <link rel="next" href="06-model-drift-monitoring.html">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>04 prep best practices - Intro to Data Science & ML</title>
+        <title>Interface Design and Integration - Intro to Data Science & ML</title>
       
     
     
@@ -82,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-preparation-best-practices" class="md-skip">
+        <a href="#interface-design-and-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              04 prep best practices
+              Interface Design and Integration
             
           </span>
         </div>
@@ -1038,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-index.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/00-index.html" class="md-nav__link">
         
   
   
@@ -1066,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-feature-engineering.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/01-feature-engineering.html" class="md-nav__link">
         
   
   
@@ -1094,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-cleaning-encoding.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/02-cleaning-encoding.html" class="md-nav__link">
         
   
   
@@ -1122,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-scaling-imputation.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/03-scaling-imputation.html" class="md-nav__link">
         
   
   
@@ -1150,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-data-splits.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/04-data-splits.html" class="md-nav__link">
         
   
   
@@ -1178,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-prep-checklist.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/05-prep-checklist.html" class="md-nav__link">
         
   
   
@@ -1206,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="06-prep-principles.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/06-prep-principles.html" class="md-nav__link">
         
   
   
@@ -2350,6 +2354,444 @@
       
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part IX: Projects in Practice
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part IX: Projects in Practice
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01-crisp-dm-retrospective.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRISP-DM Retrospective: From Coursework to Real Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-pitching-a-ds-idea.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pitching a Data-Science Idea
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-stakeholder-communication.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stakeholder Communication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-script-to-production.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    From Script to Production System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface Design and Integration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="05-interface-design-integration.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface Design and Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-consumer-types-end-users-downstream-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Consumer Types: End Users, Downstream Systems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-end-users-ui-and-decision-support-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For End Users: UI and Decision-Support Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-integration-embedding-models-in-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Integration: Embedding Models in Workflows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-model-drift-monitoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Drift and Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-ethics-accountability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics and Accountability in Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-troubleshooting-pitfalls.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting, Pitfalls, and When to Ask for Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="09-your-advantage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Your Advantage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -2361,10 +2803,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   
@@ -2382,8 +2824,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2633,93 +3075,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-preparation-checklist" class="md-nav__link">
+  <a href="#output-consumer-types-end-users-downstream-systems" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Preparation Checklist
+        Output Consumer Types: End Users, Downstream Systems
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Data Preparation Checklist">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#phase-1-before-touching-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 1: Before touching data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-2-initial-inspection-and-structural-cleaning-full-dataset-no-statistics-required" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 2: Initial inspection and structural cleaning (full dataset, no statistics required)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-3-feature-engineering-informed-by-eda-and-the-prediction-target" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 3: Feature engineering (informed by EDA and the prediction target)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-4-splitting-the-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 4: Splitting the data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-5-statistic-estimating-steps-fit-on-training-data-only-apply-to-all-splits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 5: Statistic-estimating steps (fit on training data only, apply to all splits)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-6-use-pipelines-to-orchestrate-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 6: Use pipelines to orchestrate steps
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cross-cutting-principles" class="md-nav__link">
+  <a href="#for-end-users-ui-and-decision-support-tools" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cross-Cutting Principles
+        For End Users: UI and Decision-Support Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-integration-embedding-models-in-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Integration: Embedding Models in Workflows
       
     </span>
   </a>
@@ -2755,99 +3136,78 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="03-scaling-imputation.html">&lt;-- Scaling and Imputation</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-05-supervised-learning/00-index.html">Part V: 1st Pass — Supervised Learning --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-script-to-production.html">&lt;-- From Script to Production System</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-model-drift-monitoring.html">Model Drift and Monitoring --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="data-preparation-best-practices">Data Preparation Best Practices</h1>
-<p><strong>Motivation</strong>: The previous nuggets covered specific preparation steps. In practice you face a raw dataset and need to decide what to do in which order. Some of those decisions depend on the problem you are trying to solve and the model you intend to use. </p>
+<h1 id="interface-design-and-integration">Interface Design and Integration</h1>
+<p><strong>Requires</strong>: <a href="04-script-to-production.html">From Script to Production System</a></p>
+<p><strong>Motivation</strong>: In the API example from <a href="04-script-to-production.html">🖝 From Script to Production System</a>, the deployed model returns <code>{"fault_risk": 0.91}</code>. While this number is informative, it does not represent a decision. Prediction often need to be made actionable first: Think of the maintenance technician who has to decide whether to stop the line based on the predicted fault risk. So it depends: Who is on the receiving end, and what do they need?</p>
 <blockquote>
-<p>Here you get a checklist for data preparation. This phase of <a href="../part-01-the-big-picture/04-crisp-dm.html">🖝 CRISP-DM</a> sits between EDA and modeling. The checklist is meant as a standalone reference that gives phase-by-phase checklists to guide you through the major preparation decisions: setup, structural cleaning, feature engineering, the train/test split, statistic-estimating transforms (outlier capping → imputation → scaling). We also discuss reproducibility principles: keep raw data read-only, prevent target leakage, fix random seeds, and document every structural decision.</p>
+<p>This nugget covers the interface and integration phase: identifying who consumes the output, turning raw predictions into actionable displays for people, and embedding the model into larger workflows for systems.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#data-preparation-checklist">Data Preparation Checklist</a></li>
-<li><a href="#cross-cutting-principles">Cross-Cutting Principles</a></li>
+<li><a href="#output-consumer-types-end-users-downstream-systems">Output Consumer Types: End Users, Downstream Systems</a></li>
+<li><a href="#for-end-users-ui-and-decision-support-tools">For End Users: UI and Decision-Support Tools</a></li>
+<li><a href="#system-integration-embedding-models-in-workflows">System Integration: Embedding Models in Workflows</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="data-preparation-checklist">Data Preparation Checklist</h2>
-<p>This checklist covers the major decision points you'll encounter when preparing a dataset for modeling. Use it as a quick reference when you start working on a new dataset. The main focus is still tabular data, but many principles apply in broad generality.</p>
-<p>Steps marked <strong>★</strong> estimate statistics from data. They must be fitted on the training set only, then applied identically to every split. Fitting any of them on the full dataset would leak test-set statistics and likely produce too optimistic evaluation results. The formal explanation is in <a href="../part-05-supervised-learning/02-train-test-split.html">🖝 Train/Test Split</a>, with a deeper treatement in <a href="../part-06-reflection/01-overfitting-and-generalization.md">🖝 Overfitting and Generalization</a>.</p>
-<hr />
-<h3 id="phase-1-before-touching-data">Phase 1: Before touching data</h3>
+<h2 id="output-consumer-types-end-users-downstream-systems">Output Consumer Types: End Users, Downstream Systems</h2>
+<p>Design depends on who receives the model's output. Let's differentiate between two types of consumers:</p>
 <ul>
-<li><strong>Protect your raw data.</strong> Place input files in a read-only location. Generally, all transformations should read from raw and write to a derived location.</li>
-<li><strong>Fix all random seeds.</strong> Set <code>random_state</code> to a fixed integer for every operation that uses randomness. Do this before executing any code that splits or shuffles data.</li>
+<li><strong>End users</strong> are people (technicians, doctors, etc.). They need output framed as a decision, with enough context to trust and act on it.</li>
+<li><strong>Downstream systems</strong> are other software (billing systems, dashboard backends, any kind of service). They need a structured, predictable value that conforms to an agreed contract, and nothing more.</li>
 </ul>
-<p>See also the cross-cutting principles below.</p>
-<hr />
-<h3 id="phase-2-initial-inspection-and-structural-cleaning-full-dataset-no-statistics-required">Phase 2: Initial inspection and structural cleaning (full dataset, no statistics required)</h3>
-<p>These operations do use statistics from data for transformation, so they can safely be applied to the full dataset before the train/test split.</p>
+<p>Continuing our example, the same fault-risk score serves both, but needs to "dress up" differently:</p>
 <ul>
-<li><strong>Consult the data dictionary/documentation.</strong> Documenting a data set is a responsibility of those who create it. For those working with data, reading documentation is best practice. It should inform about column types, how data was recorded and encoded, and potential use of sentinel values.</li>
-<li><strong>Remove or reconcile duplicate records.</strong> For survey data, exact duplicates can usually be dropped. Near-duplicates require judgment: do they represent different events or the same event recorded twice? Whether this step applies depends on the domain of the data.</li>
-<li><strong>Resolve wrong data types.</strong> Coerce columns to their correct representation (<code>int</code>, <code>float</code>, <code>str</code>). Correct or remove erroneous data that prevents coercion.</li>
-<li><strong>Recode sentinel values to missing.</strong> Replace values that encode missingness or special responses (e.g., <code>99</code> → <code>NaN</code>) before treating a column as numeric.</li>
-<li><strong>Correct or remove implausible entries.</strong> An <code>age</code> of 200 or a score outside the declared scale range is a data-entry error. Recover the true value if possible; otherwise remove the row. Document removals.</li>
+<li>To the maintenance system it is a number that trips an alert above a threshold.</li>
+<li>To the technician it is "high risk: inspect bearing 3 before next shift".</li>
 </ul>
-<p><em>See also: <a href="02-cleaning-encoding.html">🖝 Structural Cleaning and Encoding</a> and <a href="../part-03-data-understanding/05-eda-data-quality.html">🖝 EDA: Data Quality</a>.</em></p>
+<p>The distinction between consumers is why in our version of the <a href="../part-01-the-big-picture/04-crisp-dm.html">🖝 CRISP-DM</a> map, (user) interface design and integration is promoted as its own concern. A model that works but is never wired into how people or systems actually operate delivers no value. Getting the consumer wrong is expensive.</p>
+<p>In the following two sections, we focus on each of the two consumer types.</p>
 <hr />
-<h3 id="phase-3-feature-engineering-informed-by-eda-and-the-prediction-target">Phase 3: Feature engineering (informed by EDA and the prediction target)</h3>
-<p>Feature construction (see <a href="01-feature-engineering.html">🖝 Feature Engineering</a>) is driven by what EDA revealed and by what you want to predict. The constructions below can be applied to the full dataset, but any construction that estimates statistics (e.g., group means) needs to happen after in Phase 5.</p>
+<h2 id="for-end-users-ui-and-decision-support-tools">For End Users: UI and Decision-Support Tools</h2>
+<p>Human consumers want to close potential gaps between predictions and actions that need to be derived. The communication principle that findings must be translated into concrete, actionable steps applies directly at the interface <a href="../references.html#nussbaum2023communication">(Nussbaum, 2023)</a>.
+All of the following can contribute to making predictions actionable:</p>
 <ul>
-<li><strong>Recode and binarize where EDA motivates it.</strong> Skewed distributions, meaningful thresholds, and scale-direction inconsistencies are all triggers. </li>
-<li><strong>Build composite indexes for multi-item constructs.</strong> If several columns measure the same underlying concept, average them into a single index. Verify that all source columns point in the same direction and use the same unit before averaging.</li>
-<li><strong>Group high-cardinality categorical columns before encoding.</strong> Consider collapsing infrequent categories into an "other" bucket to avoid noise.</li>
-<li><strong>Engineer derived attributes when domain knowledge or EDA calls for it.</strong> Ratios, products, and differences can produce features more informative than either source column alone. Even single column transformations (like switching to a log scale) can sometimes be useful. Before using any derived feature, ask: <em>would this value be known before the outcome is observed?</em> If not, it is target leakage — drop it. See the cross-cutting principle below.</li>
-<li><strong>Encode categorical attributes by attribute type.</strong> Binary nominal attributes get a single 0/1 column. Multi-value nominal attributes get one-hot encoding: use <span class="arithmatex">\(k - 1\)</span> columns to avoid perfect collinearity. Ordinal attributes with a natural rank get ordered integers. Avoid ordinal encoding for nominal attributes: it implies an ordering that does not exist. See <a href="02-cleaning-encoding.html">🖝 Structural Cleaning and Encoding</a>.</li>
-<li><strong>Respect measurement scales.</strong> Arithmetic on nominal attributes is meaningless. Averaging ordinal codes treats intervals as equal. Check the measurement scale of source columns before any derived operation. See <a href="../part-03-data-understanding/02-data-types.html">🖝 Data Types and Measurement Scales</a>.</li>
+<li><strong>Turn predicted scores into actual recommendations.</strong> Apply a "tuned" decision threshold and present the resulting action. Showing the raw numbers is an optional addition for those who want it.</li>
+<li><strong>Give the "why".</strong> Attach the explanation, a top feature or a short reason from <a href="../part-06-reflection/05-explainability.html">🖝 Explainability</a>, so the user can sanity-check the output against their own judgment.</li>
+<li><strong>Show confidence and its limits.</strong> A prediction offered with no sense of certainty invites either blind trust or blanket dismissal.</li>
 </ul>
-<hr />
-<h3 id="phase-4-splitting-the-data">Phase 4: Splitting the data</h3>
-<ul>
-<li><strong>Split before any statistic-estimating step.</strong> The train/test split must happen before any operation that computes statistics from data (means, medians, min/max, frequencies). Your test set must not influence any preprocessing decision. See <a href="../part-05-supervised-learning/02-train-test-split.html">🖝 Train/Test Split</a>.</li>
-</ul>
-<hr />
-<h3 id="phase-5-statistic-estimating-steps-fit-on-training-data-only-apply-to-all-splits">Phase 5: Statistic-estimating steps (fit on training data only, apply to all splits)</h3>
-<p>Apply the following three steps in sequence. Each step's output is the next step's input.</p>
-<ul>
-<li><strong>★ Cap outliers if the model is sensitive to them.</strong> Compute cap thresholds (e.g., 1st and 99th percentile) on the training set and apply to all splits. Capping must come before scaling: a single extreme value can otherwise compress all other values into a narrow band. Skip this step for, e.g., tree-based models that are not sensitive to extreme values. See <a href="03-scaling-imputation.html">🖝 Scaling and Imputation</a>.</li>
-<li><strong>★ Impute missing values, or delete incomplete rows.</strong> Choose between listwise deletion (remove any row with a missing value) and imputation (substitute an estimate from the training set). Match the strategy to the missingness mechanism you identified: Typically, choose mean or median for data missing completely at random (MCAR), and choose model-based imputation for data missing at random (MAR). Consider adding a binary indicator column that flags which rows were imputed. See <a href="03-scaling-imputation.html">🖝 Scaling and Imputation</a> and <a href="../part-03-data-understanding/05-eda-data-quality.html">🖝 EDA: Data Quality</a>.</li>
-<li><strong>★ Scale numeric features.</strong> Distance-based models (k-NN), models like <a href="../part-05-supervised-learning/05-regularized-regression.html">🖝 Regularized Regression</a>, and neural networks are sensitive to feature scale; tree-based models are not. Z-score standardization is the safe default. Min-max scaling is appropriate only when bounded output is needed and outliers have already been handled. See <a href="03-scaling-imputation.html">🖝 Scaling and Imputation</a>.</li>
-</ul>
-<hr />
-<h3 id="phase-6-use-pipelines-to-orchestrate-steps">Phase 6: Use pipelines to orchestrate steps</h3>
-<ul>
-<li><strong>Wrap all statistic-estimating steps and the model in a pipeline.</strong> A scikit-learn <code>Pipeline</code> enforces fit/transform separation automatically, eliminates manual ordering errors, and makes the trained model portable to production. See <a href="../part-06-reflection/02-data-pipelines.md">🖝 Data Pipelines</a>.</li>
-</ul>
-<hr />
-<h2 id="cross-cutting-principles">Cross-Cutting Principles</h2>
-<p>These principles apply regardless of which specific steps your project requires. Violating any one of them can silently corrupt a project.</p>
-<p><strong>Keep raw data read-only and traceable.</strong>
-Your original input files should never be modified in place. Store raw data separately from processed data, and write all transformations as reproducible code that reads from raw and writes to a derived location. If something goes wrong upstream, you can always re-run the pipeline from scratch. If you have overwritten the raw data, you cannot. For projects where multiple derived datasets exist — different cleaning versions, different feature sets — use clearly named folders or a lightweight versioning tool so that a model artifact can always be traced back to the exact data it was trained on.</p>
-<p><strong>Prevent target leakage.</strong>
-<a href="../part-05-supervised-learning/01-supervised-learning.html">🖝 Supervised Learning</a> uses target variables, and a feature "leaks the target" when it encodes information that would not be available at prediction time. Examples: including a post-event indicator as a predictor, or constructing a ratio that implicitly incorporates the outcome. Unlike train/test leakage, target leakage produces no error or warning. The model trains and evaluates without complaint, and performance numbers look excellent right up to deployment, where the leaking feature simply does not exist. Before constructing any derived feature, ask: <em>would this value be known before the outcome is observed?</em> If not, drop it. See <a href="01-feature-engineering.html">🖝 Feature Engineering</a> for the feature construction decisions where this risk is highest, and <a href="../part-06-reflection/01-overfitting-and-generalization.md">🖝 Overfitting and Generalization</a> for the related form of leakage introduced by fitting transformers on the full dataset.</p>
-<p><strong>Fix random seeds.</strong>
-Any operation that involves randomness — the train/test split, shuffle steps inside cross-validation, and stochastic optimization — must be seeded with an explicit integer. Use <code>random_state=42</code> (or any fixed value; the specific number does not matter, consistency does). Without a fixed seed, results change on every run, making bugs nearly impossible to reproduce and progress nearly impossible to measure.</p>
-<p><strong>Document every structural decision.</strong>
-When you drop rows, recode a variable, choose a particular imputation strategy, or decide to bin a continuous attribute, write down why in a comment or a notebook cell. The choices that seem obvious today will be opaque in six months, and they will be opaque immediately to a colleague picking up the project. A one-sentence justification is enough: "Rows with <code>age &gt; 100</code> dropped as likely data entry errors (n=3)."</p>
+<p>UI is not just about actionable insights, but also about seamless integration into workflows, so:</p>
 <blockquote>
-<p><strong>Note:</strong> These principles are not data-science-specific. They are basic reproducibility hygiene. They matter in every quantitative field and in every production system. Getting them right early costs almost nothing; recovering from ignoring them can cost days.</p>
+<p><strong>Fit the existing workflow.</strong> The best interface adds a signal where people already look. This means avoiding new tools (or integrating into existing ones).</p>
+</blockquote>
+<p>It also all depends on the deeper design choice whether the system should <strong>decide itself</strong> or only <strong>support a decision</strong>. Many data-science systems are decision-support tools that keep a human in the loop. Sometimes this is safer - and it helps to clarify accountability for AI-aided decisions: The higher the stakes, the stronger the case for keeping a person in control of the final call.</p>
+<hr />
+<h2 id="system-integration-embedding-models-in-workflows">System Integration: Embedding Models in Workflows</h2>
+<p>For system consumers, the model is one component inside a larger process. Integration is about making it "well-behaved": THis is usually achieved through the same API pattern you saw for real-time serving in <a href="04-script-to-production.html">🖝 From Script to Production System</a>: The application that wraps the model queries the model with features and receives a prediction as a step within its own logic.</p>
+<p>What matters for this:</p>
+<ul>
+<li><strong>A stable interface contract.</strong> Connected systems depend on an exact and consistent shape of inputs and outputs. Especially when iterating throughout a development project, careless changes to an interface can break things downstream.</li>
+<li><strong>Graceful failure.</strong> The model service might sometimes be slow or unavailable. It is best practice to develop the surrounding workflow with adequate fallbacks. This could be a default action, but certainly not crashing the whole process.</li>
+</ul>
+<p>These requirements require development discipline. It is a mindset shift from "my model" to "one part of a system that has to keep working". This is squarely software engineering, and it is where the engineers on a project team earn their place. Your responsibility as the data scientist is to make the model's behavior, its inputs, outputs, and failure modes, predictable enough to integrate.</p>
+<blockquote>
+<p><strong>Discussion:</strong> A decision-support tool shows a recommendation <em>and</em> the reason behind it. Over months, users stop reading the reason and just click "accept". Has the interface succeeded because it is trusted, or failed because it has quietly become an autonomous decider with a human rubber-stamp?</p>
 </blockquote>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Preparation steps fall into two categories: those that require no statistics (structural cleaning, encoding, most feature construction) and those that estimate statistics from data (outlier capping, imputation, scaling). The first group can be applied to the full dataset; the second must be fitted on the training set only, then applied identically to all splits.</li>
-<li>The ordering within statistic-estimating steps matters: cap outliers first, then impute missing values, then scale. Each step's output is the next step's input.</li>
-<li>Choose encoding from the attribute type: binary for two-category nominal, one-hot (<span class="arithmatex">\(k - 1\)</span> columns) for multi-category nominal, ordered integers for ordinal. Group high-cardinality columns before encoding.</li>
-<li>Scale only when the model requires it. Tree-based models are not sensitive to feature scale; distance-based and regularized models are.</li>
-<li>Keep raw data read-only; fix random seeds; document every structural decision; check every derived feature for target leakage before using it.</li>
+<li>Identify the consumer first as the same prediction is dressed differently for each:<ul>
+<li>end users need output framed as a decision with context</li>
+<li>downstream systems need a structured value on a stable contract.</li>
+</ul>
+</li>
+<li>For people, turn scores into recommendations, show confidence, attach an explanation, and fit the existing workflow. Prefer decision-support that keeps a human in the loop over autonomous deciding, especially as stakes rise (this of course depends on a fair judgement of the model's capabilities).</li>
+<li>For systems, usually integrate through an API with a stable input/output contract and graceful failure- The model must be well-behaved component rather than a single point of collapse.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="03-scaling-imputation.html">&lt;-- Scaling and Imputation</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-05-supervised-learning/00-index.html">Part V: 1st Pass — Supervised Learning --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-script-to-production.html">&lt;-- From Script to Production System</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-model-drift-monitoring.html">Model Drift and Monitoring --&gt;</a></p>
 </blockquote>
-<p>Script v1.1 (2026-05-18) · FGN</p>
+<p>Script v1.8 (2026-08-19) · FGN</p>
 
 
 

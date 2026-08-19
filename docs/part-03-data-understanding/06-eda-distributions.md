@@ -95,4 +95,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlations -->](07-eda-correlations.md)
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN

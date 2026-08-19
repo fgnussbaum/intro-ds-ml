@@ -1,4 +1,4 @@
-> **Navigation:** [<-- Part IX: Closing the Loop - Projects in Practice](../part-09-projects-in-practice/00-index.md) | [Main Index](../index.md)
+> **Navigation:** [<-- Part IX: Projects in Practice](../part-09-projects-in-practice/00-index.md) | [Main Index](../index.md)
 
 ---
 
@@ -20,4 +20,4 @@
 
 ---
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN

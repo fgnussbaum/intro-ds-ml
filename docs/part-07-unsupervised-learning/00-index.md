@@ -19,4 +19,4 @@ Supervised learning requires labeled data. This part introduces the complementar
 
 ---
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN

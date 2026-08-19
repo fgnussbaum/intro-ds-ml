@@ -118,7 +118,7 @@ Let's briefly summarize two pretrained transformer models that defined the early
 
 **GPT** (Generative Pretrained Transformer, OpenAI) pretrains a decoder by predicting the next token given all previous tokens [(Radford et al., 2018)](../references.md#radford2018). This is the simplest possible self-supervised objective: the training signal is the text itself, no labels needed. The objective is to maximize the probability of the next token $w_t$ given all previous tokens:
 
-$$\argmax_{w_t} P(w_t \mid w_1, w_2, \ldots, w_{t-1}).$$
+$$\operatorname{argmax}_{w_t} P(w_t \mid w_1, w_2, \ldots, w_{t-1}).$$
 
 In this objective, the "causal" mask makes it well-posed. Predicting each token only sees the previous tokens.
 
@@ -173,4 +173,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Autoencoders](06-autoencoder.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Deep Learning in Practice: Choosing and Applying -->](08-dl-in-practice.md)
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN

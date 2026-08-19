@@ -27,7 +27,7 @@ The phases do not run strictly in sequence. Most real projects loop back, someti
 
 ### Business Understanding
 
-> See [🖝 Part II: Data-Science Projects](../part-02-ds-projects/00-index.md), [🖝 Part IX: Closing the Loop - Projects in Practice](../part-09-projects-in-practice/00-index.md).
+> See [🖝 Part II: Data-Science Projects](../part-02-ds-projects/00-index.md), [🖝 Part IX: Projects in Practice](../part-09-projects-in-practice/00-index.md).
 
 Here you define what you actually want to achieve.
 
@@ -69,7 +69,7 @@ Evaluation is not a single check at the end. You evaluate the model against the 
 
 ### Deployment
 
-> See [🖝 Part IX: Closing the Loop - Projects in Practice](../part-09-projects-in-practice/00-index.md).
+> See [🖝 Part IX: Projects in Practice](../part-09-projects-in-practice/00-index.md).
 
 The deployment turns a model into something useful. Depending on the project, this might mean a written report, a dashboard, an automated alert system, or a fully integrated production service.
 
@@ -136,4 +136,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- AI Ethics: A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN

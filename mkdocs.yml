@@ -82,6 +82,17 @@ nav:
     - Autoencoders: part-08-deep-learning/06-autoencoder.md
     - Transformers: part-08-deep-learning/07-transformers.md
     - "Deep Learning in Practice: Choosing and Applying": part-08-deep-learning/08-dl-in-practice.md
+  - "Part IX: Projects in Practice":
+    - Overview: part-09-projects-in-practice/00-index.md
+    - "CRISP-DM Retrospective: From Coursework to Real Projects": part-09-projects-in-practice/01-crisp-dm-retrospective.md
+    - Pitching a Data-Science Idea: part-09-projects-in-practice/02-pitching-a-ds-idea.md
+    - Stakeholder Communication: part-09-projects-in-practice/03-stakeholder-communication.md
+    - From Script to Production System: part-09-projects-in-practice/04-script-to-production.md
+    - Interface Design and Integration: part-09-projects-in-practice/05-interface-design-integration.md
+    - Model Drift and Monitoring: part-09-projects-in-practice/06-model-drift-monitoring.md
+    - Ethics and Accountability in Production: part-09-projects-in-practice/07-ethics-accountability.md
+    - Troubleshooting, Pitfalls, and When to Ask for Help: part-09-projects-in-practice/08-troubleshooting-pitfalls.md
+    - Your Advantage: part-09-projects-in-practice/09-your-advantage.md
   - Appendix:
     - Overview: part-zz-appendix/00-index.md
     - Beyond Tabular Data: part-zz-appendix/01-beyond-tabular-eda.md

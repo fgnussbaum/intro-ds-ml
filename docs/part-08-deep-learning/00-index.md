@@ -1,4 +1,4 @@
-> **Navigation:** [<-- Part VII: Unsupervised Learning](../part-07-unsupervised-learning/00-index.md) | [Main Index](../index.md) | [Part IX: Closing the Loop - Projects in Practice -->](../part-09-projects-in-practice/00-index.md)
+> **Navigation:** [<-- Part VII: Unsupervised Learning](../part-07-unsupervised-learning/00-index.md) | [Main Index](../index.md) | [Part IX: Projects in Practice -->](../part-09-projects-in-practice/00-index.md)
 
 ---
 
@@ -23,4 +23,4 @@ Shallow models (linear models, trees, ensembles) cover a wide range of structure
 
 ---
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN

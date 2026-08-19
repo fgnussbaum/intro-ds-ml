@@ -87,4 +87,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- What Deep Networks Learn: Representations](04-dl-representations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Autoencoders -->](06-autoencoder.md)
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN

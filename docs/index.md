@@ -25,11 +25,10 @@ This course is organized in parts. Each parts has several "nuggets": small diges
 | [Part VI: Principles That Transfer (Reflection)](part-06-reflection/00-index.md) | Generalization, simplicity, baselines, aligning metrics, explainability | 5 |
 | [Part VII: Unsupervised Learning](part-07-unsupervised-learning/00-index.md) | Clustering, anomaly detection, k-means, isolation forests | 4 |
 | [Part VIII: Deep Learning](part-08-deep-learning/00-index.md) | deep networks, CNNs, representations, transfer learning, autoencoder, transformers | 8 |
-| [Appendix](part-zz-appendix/00-index.md) | beyond tabular, regression in depth, SVMs (all TBD) | x |
+| [🖝 Part IX: Projects in Practice](../part-09-projects-in-practice/00-index.md) | pitching projects, stakeholders, production requirements, monitoring, troubleshooting, outlook | 9 |
+| [Appendix](part-zz-appendix/00-index.md) | beyond tabular, regression in depth, SVMs (note: all pending revision) | x |
 
-TBD: parts IX, Appendix.
-
-Generally, the course script is work in progress; you'll likely find a few unresolved TODOs along the way. Finalization is planned by roughly Dec 2026.
+Course script is mostly done but still work in progress; you'll likely find a few unresolved TODOs along the way.
 
 ---
 
@@ -43,10 +42,10 @@ When learning something new and challenging, consistency is key.
 
 There's no _magic_ abbreviation to learning skills.
 
-- Even "intelligent" AI tools don't provide a shortcut to **your personal** skill mastery, which needs to be earned the classic way: taking on the cognitive challenges that the learning journey brings to the table. No learning without some friction.
+- Even "intelligent" AI tools don't provide a shortcut to personal skill mastery, which needs to be earned the classic way: actively taking on the cognitive challenges met during the learning journey. Learning requires friction.
 - This is true for this course and data science. In fact, it is true for any skill.
 
-Grow beyond yourself. But while doing so, enjoy the journey. :)
+Grow beyond yourself - and enjoy the journey.
 
 ---
 

@@ -6,6 +6,10 @@
 
 <a id="brown2020"></a>Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., et al. (2020). Language models are few-shot learners. *Advances in Neural Information Processing Systems*, *33*, 1877–1901. [🔗 Open](https://arxiv.org/abs/2005.14165)
 
+<a id="brynjolfsson2025"></a>Brynjolfsson, E., Chandar, B., & Chen, R. (2025). *Canaries in the coal mine? Six facts about the recent employment effects of artificial intelligence*. Stanford Digital Economy Lab / Stanford Institute for Economic Policy Research, Working Paper. [🔗 Open](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/)
+
+<a id="dellacqua2026"></a>Dell'Acqua, F., McFowland III, E., Mollick, E. R., Lifshitz-Assaf, H., Kellogg, K., Rajendran, S., Krayer, L., Candelon, F., & Lakhani, K. R. (2026). Navigating the jagged technological frontier: Field experimental evidence of the effects of artificial intelligence on knowledge worker productivity and quality. *Organization Science*, *37*(2). [🔗 Open](https://doi.org/10.1287/orsc.2025.21838)
+
 <a id="deng2009"></a>Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., & Fei-Fei, L. (2009). ImageNet: A large-scale hierarchical image database. In *2009 IEEE Conference on Computer Vision and Pattern Recognition* (pp. 248–255). [🔗 Open](https://doi.org/10.1109/CVPR.2009.5206848)
 
 <a id="devlin2018"></a>Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2018). *BERT: Pre-training of deep bidirectional transformers for language understanding*. arXiv:1810.04805. [🔗 Open](https://arxiv.org/abs/1810.04805)
@@ -24,6 +28,8 @@
 
 <a id="hinton2006"></a>Hinton, G. E., & Salakhutdinov, R. R. (2006). Reducing the dimensionality of data with neural networks. *Science*, *313*(5786), 504–507. [🔗 Open](https://doi.org/10.1126/science.1127647)
 
+<a id="hitzig2026"></a>Hitzig, Z., Massenkoff, M., Lyubich, E., Zhang, S., Heller, R., & McCrory, P. (2026). *Agentic coding and persistent returns to expertise*. Anthropic Research. [🔗 Open](https://www.anthropic.com/research/claude-code-expertise)
+
 <a id="kaplan2020"></a>Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J., & Amodei, D. (2020). *Scaling laws for neural language models*. arXiv:2001.08361. [🔗 Open](https://arxiv.org/abs/2001.08361)
 
 <a id="kingma2015"></a>Kingma, D. P., & Ba, J. (2015). *Adam: A method for stochastic optimization*. International Conference on Learning Representations. [🔗 Open](https://arxiv.org/abs/1412.6980)
@@ -31,6 +37,8 @@
 <a id="lecun1998"></a>LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. *Proceedings of the IEEE*, *86*(11), 2278–2324. [🔗 Open](https://doi.org/10.1109/5.726791)
 
 <a id="lecun2015"></a>LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. *Nature*, *521*(7553), 436–444. [🔗 Open](https://doi.org/10.1038/nature14539)
+
+<a id="mitchell2019"></a>Mitchell, M., Wu, S., Zaldivar, A., Barnes, E., Vasserman, L., Hutchinson, B., Spitzer, E., Raji, I. D., & Gebru, T. (2019). Model cards for model reporting. In *Proceedings of the Conference on Fairness, Accountability, and Transparency* (pp. 220–229). [🔗 Open](https://doi.org/10.1145/3287560.3287596)
 
 <a id="nussbaum2019ising"></a>Nussbaum, F., & Giesen, J. (2019). Ising models with latent conditional Gaussian variables. In *Proceedings of the 30th International Conference on Algorithmic Learning Theory* (vol. 98, pp. 669–681). PMLR.
 

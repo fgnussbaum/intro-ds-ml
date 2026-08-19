@@ -111,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Building Blocks of Deep Networks](02-deep-networks.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What Deep Networks Learn: Representations -->](04-dl-representations.md)
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN

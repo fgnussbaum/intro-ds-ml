@@ -76,7 +76,7 @@ As with all machine learning models already discussed in this course, the loss m
 
 Training adjusts all weights in the network to minimize the loss. This requires the gradient of the loss with respect to every weight. Intuitively, the gradient informs the optimizer which direction to step.
 
-**Backpropagation** [(Rumelhart et al., 1986)](../references.md#rumelhart1986) computes these gradients efficiently. Starting from the output, it applies the chain rule of calculus layer by layer, propagating the gradient signal backward through the network. The result is the exact gradient for every weight, computed in one backward pass.
+**Backpropagation**, introduced in [(Rumelhart et al., 1986)](../references.md#rumelhart1986), computes these gradients efficiently. Starting from the output, it applies the chain rule of calculus layer by layer, propagating the gradient signal backward through the network. The result is the exact gradient for every weight, computed in one backward pass.
 
 <!-- Figure: the same fully connected network with arrows showing the forward pass (data flowing right) and the backward pass (gradient signal flowing left). Caption: "Forward pass computes predictions; backward pass propagates error gradients to every weight." -->
 
@@ -84,11 +84,11 @@ Training adjusts all weights in the network to minimize the loss. This requires 
 
 > **Note:** Backpropagation is not a learning algorithm on its own, it just computes gradients. [🖝 Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md)-like algorithms clarify how actual updates to parameters are carried out. The two work together: "backprop" computes the direction, the optimizer takes the step.
 
-The practical default optimizer for deep networks is **Adam** (Adaptive Moment Estimation) [(Kingma & Ba, 2015)](../references.md#kingma2015). Adam extends gradient descent with per-parameter adaptive learning rates and momentum, which makes it converge faster on most tasks and requires less manual tuning of the learning rate.
+The practical default optimizer for deep networks is **Adam** (Adaptive Moment Estimation, see [(Kingma & Ba, 2015)](../references.md#kingma2015)). Adam extends gradient descent with per-parameter adaptive learning rates and momentum, which makes it converge faster on most tasks and requires less manual tuning of the learning rate.
 
 To avoid overfitting during training, two standard techniques are:
 
-- **Dropout** [(Srivastava et al., 2014)](../references.md#srivastava2014) randomly zeroes a fraction of neurons during each training step, forcing the network to develop redundant representations rather than relying on individual neurons.
+- **Dropout** randomly zeroes a fraction of neurons during each training step, forcing the network to develop redundant representations rather than relying on individual neurons. See [(Srivastava et al., 2014)](../references.md#srivastava2014).
 - **Early stopping** monitors validation loss during training and saves the model at its minimum.
 
 > **Discussion:** Dropout adds noise to training; early stopping halts optimization before convergence. Both improve generalization despite seemingly making training worse or shorter. Why does adding noise or stopping early prevent overfitting, and what assumption about the training data do both interventions exploit?
@@ -109,4 +109,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- When Shallow Models Fail](01-when-shallow-fails.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Convolutional Neural Networks (CNNs) -->](03-cnns.md)
 
-Script v1.7 (2026-07-28) · FGN
+Script v1.8 (2026-08-19) · FGN
